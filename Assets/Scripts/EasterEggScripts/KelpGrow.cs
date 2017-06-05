@@ -21,6 +21,9 @@ public class KelpGrow : MonoBehaviour {
 
 	// Use this for initialization
 	void Start () {
+
+		transform.position = new Vector3 (Random.Range(MIN_X, MAX_X), Random.Range (MIN_Y, MAX_Y), 49);
+
 		
 		size = Random.Range (MIN_SIZE, MAX_SIZE);
 		transform.localScale = new Vector3 (1, 1, 0);
@@ -54,7 +57,7 @@ public class KelpGrow : MonoBehaviour {
 	void spawn(){
 		
 		// Spawn new Kelp
-		Vector3 position = new Vector3 (Random.Range(MIN_X, MAX_X), Random.Range (MIN_Y, MAX_Y), 45);
+		Vector3 position = new Vector3 (Random.Range(MIN_X, MAX_X), Random.Range (MIN_Y, MAX_Y), 49);
 		Instantiate (objectToSpawn, position, Quaternion.identity);
 
 	}
