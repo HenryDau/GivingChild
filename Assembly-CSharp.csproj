@@ -54,6 +54,7 @@
      <Compile Include="Assets\Scripts\EasterEggScripts\ClownfishSpawner.cs" />
      <Compile Include="Assets\Scripts\EasterEggScripts\ClownfishSwin.cs" />
      <Compile Include="Assets\Scripts\EasterEggScripts\JellyFishMove.cs" />
+     <Compile Include="Assets\Scripts\EasterEggScripts\KelpGrow.cs" />
      <Compile Include="Assets\Scripts\Float.cs" />
      <Compile Include="Assets\Scripts\GarbageFloatDraggable.cs" />
      <Compile Include="Assets\Scripts\GarbageFloatPoof.cs" />
