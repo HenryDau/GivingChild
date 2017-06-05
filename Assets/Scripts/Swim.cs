@@ -39,7 +39,11 @@ public class Swim : MonoBehaviour {
 
 	void OnMouseDown(){
 		if (clickable && !GlobalVariables.isPaused) {
-			Debug.Log ("Add to aquarium");
+            GameObject source = GameObject.Find("Playsparkle");
+            Sparklescript sparkle = source.GetComponent<Sparklescript>();
+            sparkle.play();
+
+            Debug.Log ("Add to aquarium");
 			Destroy (gameObject);
 		}
 	}
