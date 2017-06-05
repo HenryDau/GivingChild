@@ -53,8 +53,8 @@
      <Compile Include="Assets\Prefabs\Plugins\Pixelplacement\iTween\iTween.cs" />
      <Compile Include="Assets\Scripts\EasterEggScripts\ClownfishSpawner.cs" />
      <Compile Include="Assets\Scripts\EasterEggScripts\ClownfishSwim.cs" />
+     <Compile Include="Assets\Scripts\EasterEggScripts\GrowObject.cs" />
      <Compile Include="Assets\Scripts\EasterEggScripts\JellyFishMove.cs" />
-     <Compile Include="Assets\Scripts\EasterEggScripts\KelpGrow.cs" />
      <Compile Include="Assets\Scripts\Float.cs" />
      <Compile Include="Assets\Scripts\GarbageFloatDraggable.cs" />
      <Compile Include="Assets\Scripts\GarbageFloatPoof.cs" />
