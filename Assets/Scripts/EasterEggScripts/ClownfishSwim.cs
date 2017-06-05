@@ -2,7 +2,7 @@
 using System.Collections.Generic;
 using UnityEngine;
 
-public class ClownfishSwin : MonoBehaviour {
+public class ClownfishSwim : MonoBehaviour {
 
 	public int lifetime = 240;
 	private int count = 0;
