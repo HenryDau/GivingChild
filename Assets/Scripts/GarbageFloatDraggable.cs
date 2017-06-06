@@ -113,7 +113,11 @@ public class GarbageFloatDraggable : MonoBehaviour {
 			PointCounter Points = PointCounter.GetComponent<PointCounter> ();
 			Points.point += 1;
 
-			Destroy (gameObject);
+            GameObject playsound = GameObject.Find("Playbottle");
+            playbottlescript sound = playsound.GetComponent<playbottlescript>();
+            sound.play();
+
+            Destroy (gameObject);
 
 			//rb.velocity = new Vector2 (rb.velocity.x * -1, rb.velocity.y);
 		}
