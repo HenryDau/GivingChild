@@ -24,6 +24,7 @@ GameObject:
   - component: {fileID: 65749886610104120}
   - component: {fileID: 199632920689361776}
   - component: {fileID: 198087970196895914}
+  - component: {fileID: 95569954896097744}
   m_Layer: 0
   m_Name: ClownFish
   m_TagString: Untagged
@@ -86,6 +87,23 @@ BoxCollider:
   serializedVersion: 2
   m_Size: {x: 6.4, y: 3.34, z: 0.2}
   m_Center: {x: 0, y: 0, z: 0}
+--- !u!95 &95569954896097744
+Animator:
+  serializedVersion: 3
+  m_ObjectHideFlags: 1
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 100100000}
+  m_GameObject: {fileID: 1610416294683422}
+  m_Enabled: 1
+  m_Avatar: {fileID: 0}
+  m_Controller: {fileID: 9100000, guid: eefb7b79d13933048bb07c7da118e0a9, type: 2}
+  m_CullingMode: 0
+  m_UpdateMode: 0
+  m_ApplyRootMotion: 0
+  m_LinearVelocityBlending: 0
+  m_WarningMessage: 
+  m_HasTransformHierarchy: 1
+  m_AllowConstantClipSamplingOptimization: 1
 --- !u!108 &108916160252491848
 Light:
   m_ObjectHideFlags: 1

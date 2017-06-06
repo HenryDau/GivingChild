@@ -40,6 +40,7 @@ GameObject:
   - component: {fileID: 65542165184979074}
   - component: {fileID: 199150310991409518}
   - component: {fileID: 198395578521863612}
+  - component: {fileID: 95012447686469452}
   m_Layer: 0
   m_Name: AngleFish
   m_TagString: Untagged
@@ -86,6 +87,23 @@ BoxCollider:
   serializedVersion: 2
   m_Size: {x: 6.4, y: 4.5, z: 0.2}
   m_Center: {x: 0, y: 0, z: 0}
+--- !u!95 &95012447686469452
+Animator:
+  serializedVersion: 3
+  m_ObjectHideFlags: 1
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 100100000}
+  m_GameObject: {fileID: 1914393508512158}
+  m_Enabled: 1
+  m_Avatar: {fileID: 0}
+  m_Controller: {fileID: 9100000, guid: 10a216014ae2e4a4aa66b45eb3c8179d, type: 2}
+  m_CullingMode: 0
+  m_UpdateMode: 0
+  m_ApplyRootMotion: 0
+  m_LinearVelocityBlending: 0
+  m_WarningMessage: 
+  m_HasTransformHierarchy: 1
+  m_AllowConstantClipSamplingOptimization: 1
 --- !u!108 &108798800088610530
 Light:
   m_ObjectHideFlags: 1

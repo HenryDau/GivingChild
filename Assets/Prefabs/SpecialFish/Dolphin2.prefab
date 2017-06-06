@@ -40,6 +40,7 @@ GameObject:
   - component: {fileID: 198585462380608472}
   - component: {fileID: 65027840601946494}
   - component: {fileID: 114725376582314322}
+  - component: {fileID: 95265895022102414}
   m_Layer: 0
   m_Name: Dolphin2
   m_TagString: Untagged
@@ -86,6 +87,23 @@ BoxCollider:
   serializedVersion: 2
   m_Size: {x: 6.4, y: 1.4837608, z: 0.2}
   m_Center: {x: 0, y: -0.30762908, z: 0}
+--- !u!95 &95265895022102414
+Animator:
+  serializedVersion: 3
+  m_ObjectHideFlags: 1
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 100100000}
+  m_GameObject: {fileID: 1752388795461022}
+  m_Enabled: 1
+  m_Avatar: {fileID: 0}
+  m_Controller: {fileID: 9100000, guid: 92bdad3cc768d644fb2049cc70e7a8fb, type: 2}
+  m_CullingMode: 0
+  m_UpdateMode: 0
+  m_ApplyRootMotion: 0
+  m_LinearVelocityBlending: 0
+  m_WarningMessage: 
+  m_HasTransformHierarchy: 1
+  m_AllowConstantClipSamplingOptimization: 1
 --- !u!108 &108330546476868620
 Light:
   m_ObjectHideFlags: 1
