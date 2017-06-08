@@ -60,7 +60,7 @@ MonoBehaviour:
   MIN_Y: -60
   MAX_X: 150
   MAX_Y: 60
-  Z_SPAWN: 3
+  Z_SPAWN: -2
   randomizeRotation: 1
   growOnPoint: 0
   growOnMiss: 1

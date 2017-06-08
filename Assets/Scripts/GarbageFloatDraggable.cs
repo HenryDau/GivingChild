@@ -123,7 +123,7 @@ public class GarbageFloatDraggable : MonoBehaviour {
 		}
 
 		// Keep in the y bounds
-		if ((transform.position.y > Y_BOUND && rb.velocity.y > 0) || (transform.position.y < -Y_BOUND && rb.velocity.y < 0))
+		if ((transform.position.y > Y_BOUND && rb.velocity.y > 0) || (transform.position.y < (-Y_BOUND + 15) && rb.velocity.y < 0))
 			rb.velocity = new Vector2 (rb.velocity.x / 5, 0);//rb.velocity.y * -1);
 
 		// Make sure it stays in the same plane

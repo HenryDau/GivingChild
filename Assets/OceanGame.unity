@@ -1001,6 +1001,11 @@ Prefab:
       propertyPath: objectToSpawn
       value: 
       objectReference: {fileID: 61697144}
+    - target: {fileID: 114331228124190098, guid: 594ea43e8427b49539fd0899297e2b5d,
+        type: 2}
+      propertyPath: Z_SPAWN
+      value: -2
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_ParentPrefab: {fileID: 100100000, guid: 594ea43e8427b49539fd0899297e2b5d, type: 2}
   m_IsPrefabParent: 0
@@ -4985,9 +4990,6 @@ MonoBehaviour:
   MAX_Y: 50
   MIN_SPEED: 90
   MAX_SPEED: 120
-  keepSwimming: 1
-  xdirection: 1
-  ydirection: 1
 --- !u!4 &1990143210
 Transform:
   m_ObjectHideFlags: 0
