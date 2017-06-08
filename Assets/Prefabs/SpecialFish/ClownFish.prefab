@@ -24,7 +24,7 @@ GameObject:
   - component: {fileID: 65749886610104120}
   - component: {fileID: 199632920689361776}
   - component: {fileID: 198087970196895914}
-  - component: {fileID: 95569954896097744}
+  - component: {fileID: 95031181576040290}
   m_Layer: 0
   m_Name: ClownFish
   m_TagString: Untagged
@@ -87,7 +87,7 @@ BoxCollider:
   serializedVersion: 2
   m_Size: {x: 6.4, y: 3.34, z: 0.2}
   m_Center: {x: 0, y: 0, z: 0}
---- !u!95 &95569954896097744
+--- !u!95 &95031181576040290
 Animator:
   serializedVersion: 3
   m_ObjectHideFlags: 1

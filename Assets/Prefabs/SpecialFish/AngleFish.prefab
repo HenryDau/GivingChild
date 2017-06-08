@@ -40,7 +40,7 @@ GameObject:
   - component: {fileID: 65542165184979074}
   - component: {fileID: 199150310991409518}
   - component: {fileID: 198395578521863612}
-  - component: {fileID: 95012447686469452}
+  - component: {fileID: 95486590834482126}
   m_Layer: 0
   m_Name: AngleFish
   m_TagString: Untagged
@@ -87,7 +87,7 @@ BoxCollider:
   serializedVersion: 2
   m_Size: {x: 6.4, y: 4.5, z: 0.2}
   m_Center: {x: 0, y: 0, z: 0}
---- !u!95 &95012447686469452
+--- !u!95 &95486590834482126
 Animator:
   serializedVersion: 3
   m_ObjectHideFlags: 1
