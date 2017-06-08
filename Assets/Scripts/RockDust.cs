@@ -4,11 +4,11 @@ using UnityEngine;
 
 public class RockDust : MonoBehaviour
 {
-    public ParticleSystem dust;
+    
     // Use this for initialization
     void Start()
     {
-        dust = GameObject.Find("Dust").GetComponent<ParticleSystem>();
+        
     }
 
     // Update is called once per frame
@@ -19,9 +19,13 @@ public class RockDust : MonoBehaviour
 
     void OnCollisionEnter(Collision collision)
     {
+        ParticleSystem dust;
+        dust = GameObject.Find("Dust").GetComponent<ParticleSystem>();
         ContactPoint contact = collision.contacts[0];
         dust.transform.position = contact.point;
         dust.Play();
+        
+        
     }
 }
 
