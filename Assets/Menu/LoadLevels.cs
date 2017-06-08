@@ -8,4 +8,9 @@ public class LoadLevels : MonoBehaviour {
 	{
 		Application.LoadLevel(scene);
 	}
+
+    public void openUrl(string url)
+    {
+        Application.OpenURL(url);
+    }
 }
