@@ -42,14 +42,7 @@ public class JellyFishMove : MonoBehaviour {
         if (!GlobalVariables.isPaused)
         {
             stayInBounds();
-            Vector3 pos = transform.localPosition;
            
-
-            transform.localPosition = new Vector3(
-                pos.x + (float)speed*xdirection / 1500,
-                pos.y + (float)speed*ydirection / 1500,
-                pos.z
-            );
         }
     }
 
