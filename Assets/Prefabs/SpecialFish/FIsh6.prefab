@@ -24,7 +24,6 @@ GameObject:
   - component: {fileID: 65834544700370014}
   - component: {fileID: 199660335563841532}
   - component: {fileID: 198024649721167610}
-  - component: {fileID: 95628444308356712}
   m_Layer: 0
   m_Name: FIsh6
   m_TagString: Untagged
@@ -87,23 +86,6 @@ BoxCollider:
   serializedVersion: 2
   m_Size: {x: 6.4, y: 4.5, z: 0.2}
   m_Center: {x: 0, y: 0, z: 0}
---- !u!95 &95628444308356712
-Animator:
-  serializedVersion: 3
-  m_ObjectHideFlags: 1
-  m_PrefabParentObject: {fileID: 0}
-  m_PrefabInternal: {fileID: 100100000}
-  m_GameObject: {fileID: 1858120602268606}
-  m_Enabled: 1
-  m_Avatar: {fileID: 0}
-  m_Controller: {fileID: 9100000, guid: 52c92434dab989a4bab4c4a874ac4c82, type: 2}
-  m_CullingMode: 0
-  m_UpdateMode: 0
-  m_ApplyRootMotion: 0
-  m_LinearVelocityBlending: 0
-  m_WarningMessage: 
-  m_HasTransformHierarchy: 1
-  m_AllowConstantClipSamplingOptimization: 1
 --- !u!108 &108359899832513672
 Light:
   m_ObjectHideFlags: 1

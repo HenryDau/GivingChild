@@ -40,7 +40,6 @@ GameObject:
   - component: {fileID: 65215097585228390}
   - component: {fileID: 199659924477599126}
   - component: {fileID: 198885286775332432}
-  - component: {fileID: 95360122523915420}
   m_Layer: 0
   m_Name: FlyingFish
   m_TagString: Untagged
@@ -87,23 +86,6 @@ BoxCollider:
   serializedVersion: 2
   m_Size: {x: 6.4, y: 4.5, z: 0.2}
   m_Center: {x: 0, y: 0, z: 0}
---- !u!95 &95360122523915420
-Animator:
-  serializedVersion: 3
-  m_ObjectHideFlags: 1
-  m_PrefabParentObject: {fileID: 0}
-  m_PrefabInternal: {fileID: 100100000}
-  m_GameObject: {fileID: 1178682214148252}
-  m_Enabled: 1
-  m_Avatar: {fileID: 0}
-  m_Controller: {fileID: 9100000, guid: 0b9c5a2a53d65e94ab1180306f00ef20, type: 2}
-  m_CullingMode: 0
-  m_UpdateMode: 0
-  m_ApplyRootMotion: 0
-  m_LinearVelocityBlending: 0
-  m_WarningMessage: 
-  m_HasTransformHierarchy: 1
-  m_AllowConstantClipSamplingOptimization: 1
 --- !u!108 &108945015499793940
 Light:
   m_ObjectHideFlags: 1
