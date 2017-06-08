@@ -24,6 +24,7 @@ GameObject:
   - component: {fileID: 65417587537362858}
   - component: {fileID: 199790531550530714}
   - component: {fileID: 198701729151185646}
+  - component: {fileID: 95964065284545736}
   m_Layer: 0
   m_Name: Fish8
   m_TagString: Untagged
@@ -86,6 +87,23 @@ BoxCollider:
   serializedVersion: 2
   m_Size: {x: 6.4, y: 4.5, z: 0.2}
   m_Center: {x: 0, y: 0, z: 0}
+--- !u!95 &95964065284545736
+Animator:
+  serializedVersion: 3
+  m_ObjectHideFlags: 1
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 100100000}
+  m_GameObject: {fileID: 1449552207346232}
+  m_Enabled: 1
+  m_Avatar: {fileID: 0}
+  m_Controller: {fileID: 9100000, guid: d839c744743813a4886a569ad500bdd7, type: 2}
+  m_CullingMode: 0
+  m_UpdateMode: 0
+  m_ApplyRootMotion: 0
+  m_LinearVelocityBlending: 0
+  m_WarningMessage: 
+  m_HasTransformHierarchy: 1
+  m_AllowConstantClipSamplingOptimization: 1
 --- !u!108 &108031915710429670
 Light:
   m_ObjectHideFlags: 1
