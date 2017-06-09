@@ -29,7 +29,8 @@ public class aquaruimFishLogic : MonoBehaviour {
         load();
         if (fishOwned == false)
         {
-            enabled = false;
+            gameObject.SetActive(false);
+            Debug.Log("we got here");
         }
         updateName();
     }
