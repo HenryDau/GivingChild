@@ -12,12 +12,14 @@ public class FishMovement : MonoBehaviour {
 	public float MAX_SPEED = 2;
 	private Rigidbody2D rb2d;
 	private Vector2 goalPoint;
+
+    private Transform[] children;
+
 	// Use this for initialization
 	void Start () {
 		rb2d = GetComponent<Rigidbody2D> ();
 		selectNewPoint();
-
-	}
+    }
 	
 	// Update is called once per frame
 	void Update () {
@@ -28,7 +30,10 @@ public class FishMovement : MonoBehaviour {
 
 	private void selectNewPoint()
 	{
-		goalPoint.x = Random.Range ((float)MIN_X, (float)MAX_X);
+        Transform child = transform.GetChild(0);
+        transform.DetachChildren(); //detach children
+
+        goalPoint.x = Random.Range ((float)MIN_X, (float)MAX_X);
 		goalPoint.y = Random.Range ((float)MIN_Y, (float)MAX_Y);
 		rb2d.velocity = (goalPoint - rb2d.position).normalized * Random.Range (MIN_SPEED, MAX_SPEED);
 		Vector2 dir = rb2d.velocity;
@@ -51,8 +56,8 @@ public class FishMovement : MonoBehaviour {
 			transform.localScale = copyscale;
 		}
 
-
-	}
+        child.parent = transform; //reatach children
+    }
 	private bool pointReached(){
 		return (goalPoint - rb2d.position).magnitude < 1;
 	}
