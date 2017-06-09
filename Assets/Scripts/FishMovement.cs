@@ -12,6 +12,11 @@ public class FishMovement : MonoBehaviour {
 	public float MAX_SPEED = 2;
 	private Rigidbody2D rb2d;
 	private Vector2 goalPoint;
+    private bool pointingRight = false;
+    private bool slow = true;
+
+    private float flipTime;
+    public float flipDuration = 1;
 
     private Transform[] children;
 
@@ -26,7 +31,11 @@ public class FishMovement : MonoBehaviour {
 		if (pointReached()) {
 			selectNewPoint ();
 		}
-	}
+        Transform child = transform.GetChild(0);
+        transform.DetachChildren(); //detach children
+        doRotation();
+        child.parent = transform; //reatach children
+    }
 
 	private void selectNewPoint()
 	{
@@ -44,22 +53,67 @@ public class FishMovement : MonoBehaviour {
 			copyscale = transform.localScale;
 			copyscale.y = Mathf.Abs (copyscale.y);
 			copyscale.x = Mathf.Abs (copyscale.x);
-			if (angle < -90 || angle > 90)
-				copyscale.y *= -1;
+            if (angle < -90 || angle > 90)
+            {
+                copyscale.y *= -1;
+                if (pointingRight == false)
+                {
+                    startRotation();
+                    Debug.Log("Correction Implemented");
+                    copyscale.y *= -1;
+                    copyscale.x *= -1;
+                }
+                pointingRight = true;
+                Debug.Log("moving fast to the left");
+            }
+            else
+            {
+                if (pointingRight == true) startRotation();
+                pointingRight = false;
+                Debug.Log("moving fast to the right");
+            }
 			transform.localScale = copyscale;
+            slow = false;
 		} else {
 			transform.rotation = Quaternion.AngleAxis (0, Vector3.forward);
 			copyscale.x = Mathf.Abs (copyscale.x);
 			copyscale.y = Mathf.Abs (copyscale.y);
-			if (angle < -90 || angle > 90)
-				copyscale.x *= -1;
+            if (angle < -90 || angle > 90)
+            {
+                copyscale.x *= -1;
+                if (pointingRight == false) startRotation();
+                pointingRight = true;
+                Debug.Log("moving slow to the left");
+            }
+            else
+            {
+                if (pointingRight == true) startRotation();
+                pointingRight = false;
+                Debug.Log("moving slow to the right");
+            }
 			transform.localScale = copyscale;
-		}
+            slow = true;
+        }
 
         child.parent = transform; //reatach children
     }
 	private bool pointReached(){
 		return (goalPoint - rb2d.position).magnitude < 1;
 	}
+
+    private void startRotation()
+    {
+        flipTime = Time.time;
+        //transform.rotation = Quaternion.AngleAxis(180, new Vector3(0, 1, 0));
+    }
+
+    private void doRotation()
+    {
+        if (Time.time - flipTime < flipDuration)
+        {
+            float percent = (Time.time - flipTime) / flipDuration;
+            transform.rotation = Quaternion.AngleAxis(180-percent*180, new Vector3(0, 1 , 0));
+        }
+    }
 
 }
