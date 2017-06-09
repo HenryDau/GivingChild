@@ -12,7 +12,6 @@ public class spawnController : MonoBehaviour
     public float minY = -50.0f;
     public float spawnChance = 90f; //percent chance per second to spawn
 	int counter = 0;
-	string tag;
 
     // Use this for initialization
     void Start()

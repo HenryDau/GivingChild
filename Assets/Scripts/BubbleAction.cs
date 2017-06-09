@@ -2,7 +2,7 @@
 using System.Collections.Generic;
 using UnityEngine;
 
-public class spawnWall : MonoBehaviour {
+public class BubbleAction : MonoBehaviour {
 	public List<GameObject> objectToSpawn;
 
 	public void Punish() {
@@ -19,6 +19,14 @@ public class spawnWall : MonoBehaviour {
 		
 		for (int i = 0; i < allTrash.Length; i++) {
 			GameObject trashInstance = allTrash [i];
+			GameObject PointCounter = GameObject.Find ("Points");
+			PointCounter Points = PointCounter.GetComponent<PointCounter> ();
+			Points.point += 1;
+
+			GameObject Dropplay = GameObject.Find ("Playdrop");
+			Playdropscript drop = Dropplay.GetComponent<Playdropscript> ();
+			drop.play ();
+
 			Destroy (trashInstance);
 		}
 	}

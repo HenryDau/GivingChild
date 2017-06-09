@@ -52,6 +52,7 @@
      <Compile Include="Assets\Prefabs\Plugins\Pixelplacement\iTween\Sample\RotateSample.cs" />
      <Compile Include="Assets\Prefabs\Plugins\Pixelplacement\iTween\Sample\SampleInfo.cs" />
      <Compile Include="Assets\Prefabs\Plugins\Pixelplacement\iTween\iTween.cs" />
+     <Compile Include="Assets\Scripts\BubbleAction.cs" />
      <Compile Include="Assets\Scripts\EasterEggScripts\ClownfishSpawner.cs" />
      <Compile Include="Assets\Scripts\EasterEggScripts\ClownfishSwim.cs" />
      <Compile Include="Assets\Scripts\EasterEggScripts\GrowObject.cs" />
@@ -70,7 +71,6 @@
      <Compile Include="Assets\Scripts\UtilityScripts\SpecialFishSpawner.cs" />
      <Compile Include="Assets\Scripts\UtilityScripts\spawnController.cs" />
      <Compile Include="Assets\Scripts\WaveController.cs" />
-     <Compile Include="Assets\Scripts\spawnWall.cs" />
      <Compile Include="Assets\Sparklescript.cs" />
      <Compile Include="Assets\playbottlescript.cs" />
      <None Include="Assets\Prefabs\Plugins\Pixelplacement\iTween\ReadMe!\ReadMe!.txt" />

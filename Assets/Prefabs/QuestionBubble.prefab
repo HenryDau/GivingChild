@@ -77,7 +77,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 1e68b7ea9972098419f54464939ef193, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  skin: {fileID: 0}
+  skin: {fileID: 11400000, guid: 51ed750c9bd104b4886853ddd4cb3706, type: 2}
   questions:
   - prompt: On average, we dump the amount of a full garbage truck worth of contents
       into the ocean every minute.

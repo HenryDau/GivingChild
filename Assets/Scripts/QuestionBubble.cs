@@ -42,6 +42,7 @@ public class QuestionBubble : MonoBehaviour {
 		int randomIndex = Random.Range (0, unansweredQuestions.Count);
 
 		currentQuestion = unansweredQuestions [randomIndex];
+
 		unansweredQuestions.RemoveAt (randomIndex);
 
 	}
@@ -68,10 +69,10 @@ public class QuestionBubble : MonoBehaviour {
 
 	void DoWindow0(int windowID) {
 
-		GUI.Label(new Rect(20, 20, 460, 200), currentQuestion.prompt);
+		GUI.Label(new Rect(20, Screen.height / 8, Screen.width - 40, (Screen.height / 2) - 60), currentQuestion.prompt);
 
 
-		if (GUI.Button (new Rect (20, 160, 220, 100), currentQuestion.answerA)) {
+		if (GUI.Button (new Rect (20, (Screen.height / 2) - 40, (Screen.width / 2) - 30, (Screen.height / 4)), currentQuestion.answerA)) {
 
 			if (currentQuestion.isA) {
 				currentQuestion.extraComment = "Correct! " + currentQuestion.extraComment;
@@ -89,7 +90,7 @@ public class QuestionBubble : MonoBehaviour {
 
 		}
 
-		if (GUI.Button (new Rect (260, 160, 220, 100), currentQuestion.answerB)) {
+		if (GUI.Button (new Rect ((Screen.width / 2) + 10, (Screen.height / 2) - 40, (Screen.width / 2) - 30, Screen.height / 4), currentQuestion.answerB)) {
 
 			if (currentQuestion.isB) {
 				
@@ -106,7 +107,7 @@ public class QuestionBubble : MonoBehaviour {
 
 		}
 
-		if (GUI.Button (new Rect (20, 280, 220, 100), currentQuestion.answerC)) {
+		if (GUI.Button (new Rect (20, ((Screen.height / 2) + (Screen.height / 4)) - 20, (Screen.width / 2) - 30, (Screen.height / 4)), currentQuestion.answerC)) {
 
 			if (currentQuestion.isC) {
 				currentQuestion.extraComment = "Correct! " + currentQuestion.extraComment;
@@ -122,7 +123,7 @@ public class QuestionBubble : MonoBehaviour {
 
 		}
 
-		if (GUI.Button (new Rect (260, 280, 220, 100), currentQuestion.answerD)) {
+		if (GUI.Button (new Rect ((Screen.width / 2) + 10, ((Screen.height / 2) + (Screen.height / 4)) - 20, (Screen.width / 2) - 30, (Screen.height / 4)), currentQuestion.answerD)) {
 
 			if (currentQuestion.isD) {
 				
@@ -145,10 +146,10 @@ public class QuestionBubble : MonoBehaviour {
 	}
 
 	void DoTrueFalse(int windowID) {
-		GUI.Label(new Rect(20, 20, 460, 200), currentQuestion.prompt);
+		GUI.Label(new Rect(20, Screen.height / 4, Screen.width - 40, Screen.height / 2), currentQuestion.prompt);
 
 
-		if (GUI.Button (new Rect (20, 160, 220, 100), currentQuestion.answerA)) {
+		if (GUI.Button (new Rect (20, (Screen.height / 2), (Screen.width / 2) - 30, (Screen.height / 2) - 20), currentQuestion.answerA)) {
 
 			if (currentQuestion.isA) {
 				currentQuestion.extraComment = "Correct! " + currentQuestion.extraComment;
@@ -163,7 +164,7 @@ public class QuestionBubble : MonoBehaviour {
 			showExtra = true;
 
 		}
-		if (GUI.Button (new Rect (260, 160, 220, 100), currentQuestion.answerB)) {
+		if (GUI.Button (new Rect ((Screen.width / 2), (Screen.height / 2), (Screen.width / 2) - 20, (Screen.height / 2) - 20), currentQuestion.answerB)) {
 
 			if (currentQuestion.isB) {
 				
@@ -185,8 +186,9 @@ public class QuestionBubble : MonoBehaviour {
 	}
 
 	void DoExtra(int windowID) {
-		GUI.Label(new Rect(20, 20, 460, 200), currentQuestion.extraComment);
-		if (GUI.Button (new Rect (20, 160, 220, 100), "OK")) {
+		GUI.skin = skin;
+		GUI.Label(new Rect(20, 60, Screen.width - 40, Screen.height), currentQuestion.extraComment);
+		if (GUI.Button (new Rect ((Screen.width / 2) - (Screen.width / 8), (Screen.height / 2) + (Screen.height / 8), Screen.width / 4, Screen.height / 4), "OK")) {
 			showExtra = false;
 			GlobalVariables.isPaused = false;
 			Destroy(gameObject);
@@ -198,15 +200,15 @@ public class QuestionBubble : MonoBehaviour {
 
 	void  Punish()
 	{
-		GameObject wall = GameObject.Find ("WallSpawner");
-		spawnWall greatWall = wall.GetComponent<spawnWall> ();
+		GameObject action = GameObject.Find ("WallSpawner");
+		BubbleAction consequence = action.GetComponent<BubbleAction> ();
 		if (!wasCorrect) {
 			
-			greatWall.Punish ();
+			consequence.Punish ();
 		} else {
 
 			GameObject[] allTrash = GameObject.FindGameObjectsWithTag("Trash");
-			greatWall.Reward (allTrash);
+			consequence.Reward (allTrash);
 		}
 
 	}
@@ -216,18 +218,20 @@ public class QuestionBubble : MonoBehaviour {
 				if (!currentQuestion.isTF) {
 					if (showQuestion) {	
 						GUI.skin = skin;
-						GUI.Window (0, new Rect (200, 0, 500, 400), DoWindow0, "");
+						GUI.Window (0, new Rect (0, 0, Screen.width, Screen.height), DoWindow0, "");
 					}
 
 				} 
 				else {
 			if (showQuestion) {
-				GUI.Window (0, new Rect (200, 0, 500, 400), DoTrueFalse, "");
+				GUI.skin = skin;
+				GUI.Window (0, new Rect (0, 0, Screen.width, Screen.height), DoTrueFalse, "");
 			}
 				}
 
 		if (showExtra) {
-			GUI.Window(0, new Rect(200, 0, 500, 400), DoExtra, "");
+			GUI.skin = skin;
+			GUI.Window(0, new Rect(0, 0, Screen.width, Screen.height), DoExtra, "");
 		}
 			}
 
