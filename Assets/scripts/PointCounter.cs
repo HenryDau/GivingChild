@@ -11,12 +11,14 @@ public class PointCounter : MonoBehaviour {
     public Text pointText;
 
     void Start(){
-		pointText.text = "Trash Missed: " + trashMissed.ToString () + "\nPoints: " + point.ToString();
+		//pointText.text = "Trash Missed: " + trashMissed.ToString () + "\nPoints: " + point.ToString();
+		pointText.text = "Points: " + point.ToString();
     }
 
     private void Update()
     {
-		pointText.text = "Trash Missed: " + trashMissed.ToString () + "\nPoints: " + point.ToString();
+		//pointText.text = "Trash Missed: " + trashMissed.ToString () + "\nPoints: " + point.ToString();
+		pointText.text = "Points: " + point.ToString();
     }
 
 }

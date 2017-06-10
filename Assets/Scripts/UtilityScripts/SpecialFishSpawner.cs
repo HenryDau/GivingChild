@@ -20,7 +20,7 @@ public class SpecialFishSpawner : MonoBehaviour {
 
 		if (!GlobalVariables.isPaused) {
 			counter++;
-			float random = Random.Range (0f, 100.0f);
+			//float random = Random.Range (0f, 100.0f);
 			if (counter % spawnChance == 0) {
 				//if (random < (spawnChance) * Time.deltaTime) {
 				//Vector3 position = new Vector3 (transform.position.x, Random.Range (minY, maxY), 18);
