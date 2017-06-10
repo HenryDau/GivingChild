@@ -33,4 +33,10 @@ public class spawnController : MonoBehaviour
 		}
     }
 
+	void Despawn() {
+		
+	}
+
+
+
 }
