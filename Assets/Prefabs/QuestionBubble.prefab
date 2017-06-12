@@ -22,6 +22,7 @@ GameObject:
   - component: {fileID: 212072576731371612}
   - component: {fileID: 114728243400380842}
   - component: {fileID: 65039851047984852}
+  - component: {fileID: 114401471354744374}
   m_Layer: 0
   m_Name: QuestionBubble
   m_TagString: Untagged
@@ -54,6 +55,17 @@ BoxCollider:
   serializedVersion: 2
   m_Size: {x: 7.13, y: 7.2, z: 0.2}
   m_Center: {x: 0, y: 0, z: 0}
+--- !u!114 &114401471354744374
+MonoBehaviour:
+  m_ObjectHideFlags: 1
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 100100000}
+  m_GameObject: {fileID: 1217977008606702}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 1fca7e8501ff44e14b1a16224ba238fc, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
 --- !u!114 &114728243400380842
 MonoBehaviour:
   m_ObjectHideFlags: 1
@@ -65,8 +77,627 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 1e68b7ea9972098419f54464939ef193, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  skin: {fileID: 11400000, guid: 51ed750c9bd104b4886853ddd4cb3706, type: 2}
+  questions:
+  - prompt: On average, we dump the amount of a full garbage truck worth of contents
+      into the ocean every minute.
+    answerA: True
+    answerB: False
+    answerC: 
+    answerD: 
+    extraComment: It's true! Do your part by recycling, using less plastic goods,
+      and telling people about how they can make a difference!
+    isA: 1
+    isB: 0
+    isC: 0
+    isD: 0
+    isTF: 1
+  - prompt: Plankton and seaweed produce more than half of the oxygen we breathe.
+    answerA: True
+    answerB: False
+    answerC: 
+    answerD: 
+    extraComment: It's true! We can't live without oxygen. Half our oxygen comes from
+      the ocean. So we better take care of our ocean!
+    isA: 1
+    isB: 0
+    isC: 0
+    isD: 0
+    isTF: 1
+  - prompt: 70% of our planet is covered with oceans.
+    answerA: True
+    answerB: False
+    answerC: 
+    answerD: 
+    extraComment: It's true! Take a look at a world globe!
+    isA: 1
+    isB: 0
+    isC: 0
+    isD: 0
+    isTF: 1
+  - prompt: Sunlight makes plastic water bottles more toxic.
+    answerA: True
+    answerB: False
+    answerC: 
+    answerD: 
+    extraComment: 'It''s true! Always use reusable water bottles made from recycled
+      goods, metal or glass.  '
+    isA: 1
+    isB: 0
+    isC: 0
+    isD: 0
+    isTF: 1
+  - prompt: Plastic packaging is one of the USA's largest plastic problems.
+    answerA: True
+    answerB: False
+    answerC: 
+    answerD: 
+    extraComment: 'It''s true! Make a difference: fruit and veggies do not need to
+      be packaged in plastic. Think reusable, not disposable!'
+    isA: 1
+    isB: 0
+    isC: 0
+    isD: 0
+    isTF: 1
+  - prompt: We know more about outer space than what's going on in the ocean.
+    answerA: True
+    answerB: False
+    answerC: 
+    answerD: 
+    extraComment: It's true! More people have explored the moon than the deepest part
+      of the ocean.
+    isA: 1
+    isB: 0
+    isC: 0
+    isD: 0
+    isTF: 1
+  - prompt: 'There is ocean life that dwells in environments that we can''t even go '
+    answerA: True
+    answerB: False
+    answerC: 
+    answerD: 
+    extraComment: It's true!. We have so much of the ocean left to explore! Will you
+      be the next explorer?
+    isA: 1
+    isB: 0
+    isC: 0
+    isD: 0
+    isTF: 1
+  - prompt: What happens on land does not affect the ocean.
+    answerA: True
+    answerB: False
+    answerC: 
+    answerD: 
+    extraComment: It's false! Harmful farming pesticides from states like Iowa have
+      found their way down through our rivers to pollute the ocean. Try to buy organic
+      produce.
+    isA: 0
+    isB: 1
+    isC: 0
+    isD: 0
+    isTF: 1
+  - prompt: 'The ocean is responsible for our weather. '
+    answerA: True
+    answerB: False
+    answerC: 
+    answerD: 
+    extraComment: 'It''s true! The ocean currents distribute heat around the planet
+      and the temperature above the oceans create clouds and wind '
+    isA: 1
+    isB: 0
+    isC: 0
+    isD: 0
+    isTF: 1
+  - prompt: Where is the cleanest air and water in the world?
+    answerA: Tasmania
+    answerB: New York City
+    answerC: California
+    answerD: Hawaii
+    extraComment: "Tasmania! It was in a lot of danger. \_The water used to be so
+      dirty from factories that it stung people's skin. After people like you spoke
+      up, they closed the factories down. Now it has the cleanest air and water in
+      the world! "
+    isA: 1
+    isB: 0
+    isC: 0
+    isD: 0
+    isTF: 0
+  - prompt: Whales can tell the difference between plastic and fish while feeding.
+    answerA: True
+    answerB: False
+    answerC: 
+    answerD: 
+    extraComment: "It's false. Some whales eat so much plastic they die from it. Make
+      a difference: when eating, don\u2019t use plasticware!"
+    isA: 0
+    isB: 1
+    isC: 0
+    isD: 0
+    isTF: 1
+  - prompt: The moon impacts the ocean.
+    answerA: True
+    answerB: False
+    answerC: 
+    answerD: 
+    extraComment: It's true! This is so amazing. The ocean tides rise and fall twice
+      a day due to the gravitational pull of the moon.
+    isA: 1
+    isB: 0
+    isC: 0
+    isD: 0
+    isTF: 1
+  - prompt: Some marine animals and types of sea life are in danger of going extinct.
+    answerA: True
+    answerB: False
+    answerC: 
+    answerD: 
+    extraComment: "It's true. Sadly many have gone extinct. We will never be able
+      to get them back. But, do you know the good news?! YOU CAN MAKE A DIFFERENCE.
+      There have already been some who were on the \_endangered list and because of
+      empowered people like you, they were able to make them a flourishing species.
+      Look up the Brown Pelican and the Steller Sea Lion!"
+    isA: 1
+    isB: 0
+    isC: 0
+    isD: 0
+    isTF: 1
+  - prompt: There is no hope for the ocean.
+    answerA: True
+    answerB: False
+    answerC: 
+    answerD: 
+    extraComment: 'It''s false! There are so many successful ways to clean it up.
+      Make a difference: use reusable containers instead of plastic bags for your
+      lunch! '
+    isA: 0
+    isB: 1
+    isC: 0
+    isD: 0
+    isTF: 1
+  - prompt: What percentage of life on Earth is aquatic?
+    answerA: 5%
+    answerB: 94%
+    answerC: 20%
+    answerD: 50%
+    extraComment: Do you think we should care of that 94%?
+    isA: 0
+    isB: 1
+    isC: 0
+    isD: 0
+    isTF: 0
+  - prompt: How many tons of gold are in the ocean?
+    answerA: 5 tons
+    answerB: 20 million tons
+    answerC: 1000 tons
+    answerD: 0.5 tons
+    extraComment: What would you do if you found 20 million tons of gold?
+    isA: 0
+    isB: 1
+    isC: 0
+    isD: 0
+    isTF: 0
+  - prompt: A new form of life, based on chemical energy rather than light energy,
+      resides in deep-sea hydrothermal vents along mid-ocean ridges.
+    answerA: True
+    answerB: False
+    answerC: 
+    answerD: 
+    extraComment: It's true! This shows the ocean is somewhat adaptable.
+    isA: 1
+    isB: 0
+    isC: 0
+    isD: 0
+    isTF: 1
+  - prompt: The heart of a blue whale is the size of a Volkswagen car.
+    answerA: True
+    answerB: False
+    answerC: 
+    answerD: 
+    extraComment: What would you do if you saw a blue whale?
+    isA: 1
+    isB: 0
+    isC: 0
+    isD: 0
+    isTF: 1
+  - prompt: How far do gray whales migrate each year?
+    answerA: 5 miles
+    answerB: 1,000 miles
+    answerC: 10,000 miles
+    answerD: 50,000
+    extraComment: 10,000 miles is as far as driving from New York City to Los Angeles
+      three and a half times!
+    isA: 0
+    isB: 0
+    isC: 1
+    isD: 0
+    isTF: 0
+  - prompt: What percentage of ocean pollution comes from the land?
+    answerA: 0%
+    answerB: 25%
+    answerC: 80%
+    answerD: 100%
+    extraComment: '80%. This is good news because since 80% of ocean pollution comes
+      from land, it proves what a difference all of us can make! Make a difference:
+      when buying cereal, bring a reusable container and buy it from the bulk section. '
+    isA: 0
+    isB: 0
+    isC: 1
+    isD: 0
+    isTF: 0
+  - prompt: What percentage of marine life is dependent on coral reefs?
+    answerA: 11%
+    answerB: 57%
+    answerC: 78%
+    answerD: 90%
+    extraComment: '90% shows how important it is for us to take care of our reefs.
+      Make a difference: eat organic food, make your own cleaning products and learn
+      about how to make laws better concerning oil spills.'
+    isA: 0
+    isB: 0
+    isC: 0
+    isD: 1
+    isTF: 0
+  - prompt: How many people are dependent on the ocean for the majority of their food
+      supply?
+    answerA: 0
+    answerB: 600
+    answerC: 100,000
+    answerD: 3.5 billion
+    extraComment: "If 3.5 billion people couldn\u2019t depend on the ocean for their
+      food supply, what would happen?"
+    isA: 0
+    isB: 0
+    isC: 0
+    isD: 1
+    isTF: 0
+  - prompt: 'How many sharks are killed for their fins each year? '
+    answerA: Zero, why would someone want shark fins?
+    answerB: 100 million
+    answerC: 20
+    answerD: 800
+    extraComment: '100 million sharks are killed a year ONLY for their fins. They
+      are killed so people can have shark fin soup. The rest of their bodies are discarded. '
+    isA: 0
+    isB: 1
+    isC: 0
+    isD: 0
+    isTF: 0
+  - prompt: Are sharks important for a healthy ocean?
+    answerA: Yes
+    answerB: No, they just attack people.
+    answerC: No, they just act in movies.
+    answerD: No, they are useless.
+    extraComment: Sharks are incredibly important for keeping oceans clean and healthy.
+    isA: 1
+    isB: 0
+    isC: 0
+    isD: 0
+    isTF: 0
+  - prompt: 'How many seabirds are killed each year by illegal longline fishing? '
+    answerA: 300,000
+    answerB: 0
+    answerC: 20
+    answerD: 500
+    extraComment: '300,000 seabirds dead. Better law enforcement could make a big
+      impact on this problem. '
+    isA: 1
+    isB: 0
+    isC: 0
+    isD: 0
+    isTF: 0
+  - prompt: 'Each year, on average, how much oil has been spilled or leaked from ships? '
+    answerA: 600,000 barrels or 216 million pounds of oil each year, for the past
+      10 years.
+    answerB: None, companies take extreme precautions to make sure it doesn't happen.
+    answerC: 500 cups, companies aren't perfect.
+    answerD: 5 pints, companies are REALLY careful, but still not perfect.
+    extraComment: "600,000 barrels of oil in the ocean creates dead zones. Meaning
+      it\u2019s killing fish, entire reefs and our major oxygen sources. This is a
+      serious problem that can be helped with better laws and law enforcement. "
+    isA: 1
+    isB: 0
+    isC: 0
+    isD: 0
+    isTF: 0
+  - prompt: You could invent a solution to clean up the ocean!
+    answerA: True
+    answerB: False
+    answerC: 
+    answerD: 
+    extraComment: 'It''s true! We need more people like you making a difference! Research.
+      Think super hard. experiment, and be the oceans superhero!!! '
+    isA: 1
+    isB: 0
+    isC: 0
+    isD: 0
+    isTF: 1
+  - prompt: How many seabirds die each year from plastic waste?
+    answerA: 0
+    answerB: 200
+    answerC: 1,000,000
+    answerD: Seabirds live forever
+    extraComment: 1 million. Sadly their small tummies are literally filled with plastic.
+    isA: 0
+    isB: 0
+    isC: 1
+    isD: 0
+    isTF: 0
+  - prompt: How many species of coral reef fish are there?
+    answerA: 1
+    answerB: 30
+    answerC: 198
+    answerD: About 4000
+    extraComment: Can you imagine getting to see even 300 different kinds of fish?
+      Imagine 4,000!
+    isA: 0
+    isB: 0
+    isC: 0
+    isD: 1
+    isTF: 0
+  - prompt: 'How much money is made from coral reefs per year in tourism, food production,
+      jobs, and medicines? '
+    answerA: $5 million
+    answerB: $2.7 billion
+    answerC: $172 billion
+    answerD: $100,000
+    extraComment: Coral reefs are important in so many ways. Giving fish the environment
+      they need to thrive, giving people jobs and the ability to feed their families
+      along with so much more!
+    isA: 1
+    isB: 0
+    isC: 0
+    isD: 0
+    isTF: 0
+  - prompt: Corals are all dead.
+    answerA: True
+    answerB: False
+    answerC: 
+    answerD: 
+    extraComment: It's false! They are alive and they make the ocean thrive!
+    isA: 0
+    isB: 1
+    isC: 0
+    isD: 0
+    isTF: 1
+  - prompt: Coral reefs are excellent at helping to clean up oil spills.
+    answerA: True
+    answerB: False
+    answerC: 
+    answerD: 
+    extraComment: 'It''s false. Oil spills kill coral reefs very quickly. Make a difference:
+      there are plant derived oils available that we could switch to if people like
+      you demand action.'
+    isA: 0
+    isB: 1
+    isC: 0
+    isD: 0
+    isTF: 1
+  - prompt: How deep can we find trash in the ocean?
+    answerA: As deep as we can go
+    answerB: All trash floats on the surface
+    answerC: 10 feet and up
+    answerD: 5 feet and up
+    extraComment: "You can find chairs, water bottles, trash bags and barrels all
+      over the ocean. Make a difference: make fresh juice instead of buying it in
+      plastic bottles. It\u2019s better for you and the ocean!"
+    isA: 1
+    isB: 0
+    isC: 0
+    isD: 0
+    isTF: 0
+  - prompt: We need the ocean in order to breathe.
+    answerA: True
+    answerB: False
+    answerC: 
+    answerD: 
+    extraComment: 'It''s true: Plankton and seaweed produce more than half of the
+      oxygen we breathe. Without oxygen we cannot live. Make a difference: tell everyone
+      you know about how they can lessen their plastic use!  '
+    isA: 1
+    isB: 0
+    isC: 0
+    isD: 0
+    isTF: 1
+  - prompt: Oil spills are VERY bad for the ocean.
+    answerA: True
+    answerB: False
+    answerC: 
+    answerD: 
+    extraComment: 'It''s true. Oil spills are a huge problem. Fortunately, if we hold
+      companies accountable, they won''t happen as often. '
+    isA: 1
+    isB: 0
+    isC: 0
+    isD: 0
+    isTF: 1
+  - prompt: Would this ever happen? You go 2000 feet below the ocean and see a plastic
+      water bottle.
+    answerA: True
+    answerB: False
+    answerC: 
+    answerD: 
+    extraComment: This would happen. There are many plastic bottles at the bottom
+      of the ocean. Make a difference by drinking out of reusable water bottles!
+    isA: 1
+    isB: 0
+    isC: 0
+    isD: 0
+    isTF: 1
+  - prompt: Would this ever happen? You go 2000 feet below the ocean and find a milk
+      carton.
+    answerA: True
+    answerB: False
+    answerC: 
+    answerD: 
+    extraComment: 'This would happen. A milk carton is thicker than a grocery bag
+      and a plastic grocery bag can take 1,000 years to degrade. Make a difference
+      by always taking reusable shopping bags to the grocery store! '
+    isA: 1
+    isB: 0
+    isC: 0
+    isD: 0
+    isTF: 1
+  - prompt: 'Would this ever happen? You find a bird that has over 250 pieces of plastic
+      in it. '
+    answerA: True
+    answerB: False
+    answerC: 
+    answerD: 
+    extraComment: "This would happen, it\u2019s in their tummies and it kills them.
+      That's similar to 12 giant sandwiches worth of plastic. Make a difference: use
+      reusable containers! "
+    isA: 1
+    isB: 0
+    isC: 0
+    isD: 0
+    isTF: 1
+  - prompt: There are fish that look like they have Christmas lights on them.
+    answerA: True
+    answerB: False
+    answerC: 
+    answerD: 
+    extraComment: There are SO many beautiful looking species!!! You have some exploring
+      to do!
+    isA: 1
+    isB: 0
+    isC: 0
+    isD: 0
+    isTF: 1
+  - prompt: If a turtle eats too much plastic, they have no option but to float.
+    answerA: True
+    answerB: False
+    answerC: 
+    answerD: 
+    extraComment: 'It''s true. Some people save turtles for their job by finding turtles
+      and giving them medicine along with a good diet to clean the plastic out of
+      their tummies. Help by limiting your use of plastic straws. '
+    isA: 1
+    isB: 0
+    isC: 0
+    isD: 0
+    isTF: 1
+  - prompt: We know less about outer space than our oceans.
+    answerA: True
+    answerB: False
+    answerC: 
+    answerD: 
+    extraComment: 'It''s false. We know much more about outer space than we do about
+      70% of the surface of our own world. '
+    isA: 0
+    isB: 1
+    isC: 0
+    isD: 0
+    isTF: 1
+  - prompt: 'There is life in the ocean that lives in places too dangerous for us
+      to explore. '
+    answerA: True
+    answerB: False
+    answerC: 
+    answerD: 
+    extraComment: It's true. We have so much exploration left to do! You could invent
+      new and better ways to explore it.
+    isA: 1
+    isB: 0
+    isC: 0
+    isD: 0
+    isTF: 1
+  - prompt: "I live so far from any beach, it doesn\u2019t matter what my family and
+      I do. "
+    answerA: True
+    answerB: False
+    answerC: 
+    answerD: 
+    extraComment: 'It''s false. Litter, sewage, crop fertilizer, gas & oil from cars,
+      poisoned rain water; all of it can run into the ocean, killing all sorts of
+      creatures. '
+    isA: 0
+    isB: 1
+    isC: 0
+    isD: 0
+    isTF: 1
+  - prompt: The ocean is responsible for the weather only on the days when it is rainy
+      and cold.
+    answerA: True
+    answerB: False
+    answerC: 
+    answerD: 
+    extraComment: It is false. The ocean is responsible for all our weather. The currents
+      distribute heat around the planet. Temperature above the oceans create clouds
+      and wind.
+    isA: 0
+    isB: 1
+    isC: 0
+    isD: 0
+    isTF: 1
+  - prompt: "Bioremediation (BIO\u2014re\u2014ME\u2014di\u2014A\u2014tion) is a successful
+      way to help clean up water sources. "
+    answerA: True
+    answerB: False
+    answerC: 
+    answerD: 
+    extraComment: It's true! Bioremediation is the use of natural organisms to break
+      down toxic substances into less toxic or non-toxic substances.
+    isA: 1
+    isB: 0
+    isC: 0
+    isD: 0
+    isTF: 1
+  - prompt: "Phytoremediation (PHYTO\u2014re\u2014ME\u2014di\u2014A\u2014tion) is
+      a successful way to help clean up water ways."
+    answerA: True
+    answerB: False
+    answerC: 
+    answerD: 
+    extraComment: 'It''s true. Phytoremediation is the use of green plants to detoxify
+      soil and water contaminated with heavy metals or excess minerals '
+    isA: 1
+    isB: 0
+    isC: 0
+    isD: 0
+    isTF: 1
+  - prompt: 'You find a stream full of trash. What would clean it up well enough for
+      fish and plants to thrive? '
+    answerA: Bioremediation
+    answerB: Scrub it with shampoo
+    answerC: Dump oil in it
+    answerD: A&C
+    extraComment: Bioremediation is the use of natural organisms to break down toxic
+      substances into less toxic or non-toxic substances.
+    isA: 1
+    isB: 0
+    isC: 0
+    isD: 0
+    isTF: 0
+  - prompt: "PyroGenesis is the destruction of easily burned waste through use of
+      a plasma torch. It also\u2026 "
+    answerA: '...runs off its own energy'
+    answerB: '...is affordable'
+    answerC: '...has no detrimental effect on the environment'
+    answerD: All of the above
+    extraComment: 'PyroGenesis is an awesome solution to help clean up our ocean. '
+    isA: 0
+    isB: 0
+    isC: 0
+    isD: 1
+    isTF: 0
+  - prompt: There is a part of the ocean that is over a mile deeper than the height
+      of Mount Everest.
+    answerA: True
+    answerB: False
+    answerC: 
+    answerD: 
+    extraComment: It's called the Mariana Trench in the Western Pacific Ocean. Humans
+      have only been there once, way back in 1960. You could be the next explorer
+      to adventure down there!
+    isA: 1
+    isB: 0
+    isC: 0
+    isD: 0
+    isTF: 1
   showQuestion: 0
   doWindow0: 1
+  doTrueFalse: 1
+  showExtra: 0
 --- !u!212 &212072576731371612
 SpriteRenderer:
   m_ObjectHideFlags: 1
