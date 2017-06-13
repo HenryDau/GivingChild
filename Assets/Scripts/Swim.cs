@@ -7,10 +7,12 @@ public class Swim : MonoBehaviour {
 	private int speed;
 	public bool keepSwimming = true;
 	public bool clickable = false;
+	public int MIN_SPEED = 5;
+	public int MAX_SPEED = 15;
 
 	// Use this for initialization
 	void Start () {
-		speed = Random.Range (5, 15);
+		speed = Random.Range (MIN_SPEED, MAX_SPEED);
 	}
 	
 	// Update is called once per frame
@@ -23,7 +25,7 @@ public class Swim : MonoBehaviour {
 				if (keepSwimming) {
 					speed *= -1;
 					transform.Rotate (Vector3.up, 180);
-					pos.y = (float)(.5 - Random.value) * 150;
+					pos.y = (float)(.5 - Random.value) * 140;
 				} else {
 					Destroy (gameObject);
 				}
@@ -39,7 +41,11 @@ public class Swim : MonoBehaviour {
 
 	void OnMouseDown(){
 		if (clickable && !GlobalVariables.isPaused) {
-			Debug.Log ("Add to aquarium");
+            GameObject source = GameObject.Find("Playsparkle");
+            Sparklescript sparkle = source.GetComponent<Sparklescript>();
+            sparkle.play();
+
+            Debug.Log ("Add to aquarium");
 			Destroy (gameObject);
 		}
 	}

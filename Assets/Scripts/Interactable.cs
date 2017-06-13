@@ -6,10 +6,8 @@ public class Interactable : MonoBehaviour {
 	
 	private Rigidbody rb;
 	private bool pressed = false;
-	private bool released = false;
 	private Vector3 screenPoint;
 	private Vector3 offset;
-	private Vector3 oldPosition;
 
 	// Use this for initialization
 	void Start () {
@@ -46,7 +44,6 @@ public class Interactable : MonoBehaviour {
 
 		if (!GlobalVariables.isPaused) {
 
-			oldPosition = transform.position;
 
 			Vector3 curScreenPoint = new Vector3 (Input.mousePosition.x, Input.mousePosition.y, screenPoint.z);
 
@@ -60,7 +57,6 @@ public class Interactable : MonoBehaviour {
 	void OnMouseUp(){
 		if (!GlobalVariables.isPaused) {
 			pressed = false;
-			released = true;
 
 			//rb.velocity = (transform.position - oldPosition) * Time.deltaTime * 5;
 		}

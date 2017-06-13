@@ -20,8 +20,13 @@ public class GarbageFloatDraggable : MonoBehaviour {
 	void Start () {
 		int speed = Random.Range (5, 10);
 		rb = GetComponent<Rigidbody2D> ();
-		rb.velocity = new Vector3 ((float)speed / 10, 0, 0);
+		rb.velocity = new Vector3 (0, -(float)speed / 10, 0);
 		//rb.velocity = new Vector3 (15 / 10, 0, 0);
+		transform.position = new Vector3 (
+			Random.Range (-X_BOUND, X_BOUND),
+			Y_BOUND,
+			0
+		);
 	}
 
 	void OnMouseDown(){
@@ -100,12 +105,26 @@ public class GarbageFloatDraggable : MonoBehaviour {
 	void stayInBounds(){
 		
 		// Turn around if at the end of the map
-		if ((rb.velocity.x > 0 && transform.position.x > X_BOUND) || (rb.velocity.x < 0 && transform.position.x < -X_BOUND))
-			rb.velocity = new Vector2 (rb.velocity.x * -1, rb.velocity.y);
+		if ((rb.velocity.x > 0 && transform.position.x > X_BOUND) 
+			|| (rb.velocity.x < 0 && transform.position.x < -X_BOUND)){
+
+			//Finds Points and increments public variable
+			GameObject PointCounter = GameObject.Find ("Points");
+			PointCounter Points = PointCounter.GetComponent<PointCounter> ();
+			Points.point += 1;
+
+            GameObject playsound = GameObject.Find("Playbottle");
+            playbottlescript sound = playsound.GetComponent<playbottlescript>();
+            sound.play();
+
+            Destroy (gameObject);
+
+			//rb.velocity = new Vector2 (rb.velocity.x * -1, rb.velocity.y);
+		}
 
 		// Keep in the y bounds
-		if ((transform.position.y > Y_BOUND && rb.velocity.y > 0) || (transform.position.y < -Y_BOUND && rb.velocity.y < 0))
-			rb.velocity = new Vector2 (rb.velocity.x, rb.velocity.y * -1);
+		if ((transform.position.y > Y_BOUND && rb.velocity.y > 0) || (transform.position.y < (-Y_BOUND + 15) && rb.velocity.y < 0))
+			rb.velocity = new Vector2 (rb.velocity.x / 5, 0);//rb.velocity.y * -1);
 
 		// Make sure it stays in the same plane
 		if (transform.position.z != 0) {

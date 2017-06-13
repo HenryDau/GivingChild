@@ -40,6 +40,7 @@ GameObject:
   - component: {fileID: 65114997528238506}
   - component: {fileID: 199263894922394292}
   - component: {fileID: 198736059610757084}
+  - component: {fileID: 95549253509246140}
   m_Layer: 0
   m_Name: Dolphin1
   m_TagString: Untagged
@@ -86,6 +87,23 @@ BoxCollider:
   serializedVersion: 2
   m_Size: {x: 6.4, y: 2.172284, z: 0.2}
   m_Center: {x: 0, y: 0.08516102, z: -0}
+--- !u!95 &95549253509246140
+Animator:
+  serializedVersion: 3
+  m_ObjectHideFlags: 1
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 100100000}
+  m_GameObject: {fileID: 1852132233215394}
+  m_Enabled: 1
+  m_Avatar: {fileID: 0}
+  m_Controller: {fileID: 9100000, guid: 0eac166ec2f4f2749addb2405dc4db44, type: 2}
+  m_CullingMode: 0
+  m_UpdateMode: 0
+  m_ApplyRootMotion: 0
+  m_LinearVelocityBlending: 0
+  m_WarningMessage: 
+  m_HasTransformHierarchy: 1
+  m_AllowConstantClipSamplingOptimization: 1
 --- !u!108 &108635242739818756
 Light:
   m_ObjectHideFlags: 1
@@ -135,6 +153,8 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   keepSwimming: 0
   clickable: 1
+  MIN_SPEED: 5
+  MAX_SPEED: 10
 --- !u!198 &198736059610757084
 ParticleSystem:
   m_ObjectHideFlags: 1
