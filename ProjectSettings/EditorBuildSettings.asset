@@ -6,17 +6,20 @@ EditorBuildSettings:
   serializedVersion: 2
   m_Scenes:
   - enabled: 1
-    path: Assets/Menu/main_menu.unity
-    guid: d65b931bee1b5c147802926886eb2ff4
-  - enabled: 1
-    path: Assets/Menu/4_plus.unity
-    guid: 287835b6e35f4b14487d7d2e40661ba8
-  - enabled: 1
-    path: Assets/OceanGame.unity
-    guid: 98e43503d7ff64b4abc28afa2869b493
-  - enabled: 1
-    path: Assets/_Scenes/AquariumScene.unity
+    path: Assets/_Scenes/AquariumScene1.unity
     guid: e948195eddaca44d8b0edddf3aa10b96
   - enabled: 1
-    path: Assets/Menu/about.unity
+    path: Assets/_Scenes/AquariumScene2.unity
+    guid: 9d61a655794199044b4a4fd920724461
+  - enabled: 1
+    path: Assets/_Scenes/AquariumScene3.unity
+    guid: fc533be1e6acd6943a6dcd3b37d2c050
+  - enabled: 1
+    path: Assets/_Scenes/AquariumScene4.unity
+    guid: 406240730d1d33148bbc8ad7bed76086
+  - enabled: 1
+    path: Assets/_Scenes/AquariumScene5.unity
+    guid: 7b36097726e751a44910208e53ccf34d
+  - enabled: 1
+    path: Assets/_Scenes/AquariumScene6.unity
     guid: 00000000000000000000000000000000

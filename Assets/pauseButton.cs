@@ -13,7 +13,6 @@ public class pauseButton : MonoBehaviour {
 		} else if (GlobalVariables.isPaused == false) {
 			GlobalVariables.isPaused = true;
 		}
-
 	}
 
 	void OnGUI() {
