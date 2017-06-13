@@ -727,7 +727,7 @@ GameObject:
   - component: {fileID: 721516591}
   m_Layer: 0
   m_Name: Background Music
-  m_TagString: Untagged
+  m_TagString: Music
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -1875,7 +1875,7 @@ ParticleSystem:
   moveWithTransform: 0
   moveWithCustomTransform: {fileID: 0}
   scalingMode: 1
-  randomSeed: -1628847895
+  randomSeed: -1319790705
   InitialModule:
     serializedVersion: 3
     enabled: 1

@@ -48,6 +48,7 @@
   <ItemGroup>
      <Compile Include="Assets\GlobalVariables.cs" />
      <Compile Include="Assets\Menu\LoadLevels.cs" />
+     <Compile Include="Assets\MusicScript.cs" />
      <Compile Include="Assets\Prefabs\Plugins\Pixelplacement\iTween\Sample\MoveSample.cs" />
      <Compile Include="Assets\Prefabs\Plugins\Pixelplacement\iTween\Sample\RotateSample.cs" />
      <Compile Include="Assets\Prefabs\Plugins\Pixelplacement\iTween\Sample\SampleInfo.cs" />
