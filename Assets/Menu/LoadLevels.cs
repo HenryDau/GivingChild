@@ -13,4 +13,9 @@ public class LoadLevels : MonoBehaviour {
     {
         Application.OpenURL(url);
     }
+
+	public static void loadMenu(string scene)
+	{
+		Application.LoadLevel(scene);
+	}
 }
