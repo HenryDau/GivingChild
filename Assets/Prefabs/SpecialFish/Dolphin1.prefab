@@ -153,6 +153,8 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   keepSwimming: 0
   clickable: 1
+  MIN_SPEED: 5
+  MAX_SPEED: 10
 --- !u!198 &198736059610757084
 ParticleSystem:
   m_ObjectHideFlags: 1

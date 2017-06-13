@@ -6,11 +6,8 @@ EditorBuildSettings:
   serializedVersion: 2
   m_Scenes:
   - enabled: 1
-    path: Assets/Menu/main_menu.unity
-    guid: d65b931bee1b5c147802926886eb2ff4
-  - enabled: 1
-    path: Assets/Menu/4_plus.unity
-    guid: 287835b6e35f4b14487d7d2e40661ba8
+    path: Assets/Menu/bubble_menu.unity
+    guid: aa5617955e06f8e4ab8b5593ade7e476
   - enabled: 1
     path: Assets/OceanGame.unity
     guid: 98e43503d7ff64b4abc28afa2869b493
@@ -19,4 +16,7 @@ EditorBuildSettings:
     guid: e948195eddaca44d8b0edddf3aa10b96
   - enabled: 1
     path: Assets/Menu/about.unity
-    guid: 00000000000000000000000000000000
+    guid: fa4df3b702b869748b22c0b6b6d29f8f
+  - enabled: 1
+    path: Assets/Menu/bubble_levels.unity
+    guid: 224ce69daa2ae524cb45014e50a3e811
