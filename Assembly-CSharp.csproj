@@ -66,16 +66,15 @@
      <Compile Include="Assets\Scripts\Question.cs" />
      <Compile Include="Assets\Scripts\QuestionBubble.cs" />
      <Compile Include="Assets\Scripts\RockDust.cs" />
+     <Compile Include="Assets\Scripts\Sparklescript.cs" />
      <Compile Include="Assets\Scripts\Swim.cs" />
      <Compile Include="Assets\Scripts\UtilityScripts\SpawnQuestions.cs" />
      <Compile Include="Assets\Scripts\UtilityScripts\SpecialFishSpawner.cs" />
      <Compile Include="Assets\Scripts\UtilityScripts\spawnController.cs" />
      <Compile Include="Assets\Scripts\WaveController.cs" />
-     <Compile Include="Assets\Sparklescript.cs" />
+     <Compile Include="Assets\Scripts\playbottlescript.cs" />
      <Compile Include="Assets\pauseButton.cs" />
-     <Compile Include="Assets\playbottlescript.cs" />
      <None Include="Assets\Prefabs\Plugins\Pixelplacement\iTween\ReadMe!\ReadMe!.txt" />
-     <None Include="Assets\nnj3de_crucarp\README.txt" />
  <Reference Include="UnityEngine.Analytics">
  <HintPath>/Applications/Unity/Unity.app/Contents/UnityExtensions/Unity/UnityAnalytics/UnityEngine.Analytics.dll</HintPath>
  </Reference>
