@@ -1,13 +1,15 @@
 ﻿using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
+using UnityEngine.UI;
 
 public class renameControlerScript : MonoBehaviour {
 
     public GameObject fishToRename;
+    public InputField inputField;
 
-	// Use this for initialization
-	void Start () {
+    // Use this for initialization
+    void Start () {
 		
 	}
 	
@@ -19,6 +21,7 @@ public class renameControlerScript : MonoBehaviour {
     public void renameFish(string newName)
     {
         ((aquaruimFishLogic)fishToRename.GetComponent("aquaruimFishLogic")).fishName = newName;
+        
         ((aquaruimFishLogic)fishToRename.GetComponent("aquaruimFishLogic")).updateName();
     }
 }

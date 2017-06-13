@@ -4,6 +4,7 @@ using UnityEngine;
 using System.IO;
 using System.Runtime.Serialization.Formatters.Binary;
 using System;
+using UnityEngine.UI;
 
 public class aquaruimFishLogic : MonoBehaviour {
 
@@ -45,6 +46,7 @@ public class aquaruimFishLogic : MonoBehaviour {
         //changes the object being renamed to the one clicked
         GameObject controler = GameObject.Find("RenameControler");
         ((renameControlerScript)(controler.GetComponent("renameControlerScript"))).fishToRename = gameObject;
+        ((renameControlerScript)(controler.GetComponent("renameControlerScript"))).inputField.text = fishName;
     }
 
     private void load()
