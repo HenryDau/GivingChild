@@ -762,7 +762,6 @@ GameObject:
   m_Component:
   - component: {fileID: 753117251}
   - component: {fileID: 753117250}
-  - component: {fileID: 753117249}
   - component: {fileID: 753117252}
   m_Layer: 0
   m_Name: MenuMusic
@@ -771,17 +770,6 @@ GameObject:
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
   m_IsActive: 1
---- !u!114 &753117249
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_PrefabParentObject: {fileID: 0}
-  m_PrefabInternal: {fileID: 0}
-  m_GameObject: {fileID: 753117248}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: c5c7fb1ec310cf3409958c8b2dd3f907, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
 --- !u!82 &753117250
 AudioSource:
   m_ObjectHideFlags: 0
@@ -1981,6 +1969,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: ca33da394d0a0c445aea1b524850d1e5, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  objectToSpawn: {fileID: 0}
 --- !u!50 &1982274935
 Rigidbody2D:
   serializedVersion: 4
