@@ -22,7 +22,6 @@ GameObject:
   - component: {fileID: 212072576731371612}
   - component: {fileID: 114728243400380842}
   - component: {fileID: 65039851047984852}
-  - component: {fileID: 114401471354744374}
   m_Layer: 0
   m_Name: QuestionBubble
   m_TagString: Untagged
@@ -55,17 +54,6 @@ BoxCollider:
   serializedVersion: 2
   m_Size: {x: 7.13, y: 7.2, z: 0.2}
   m_Center: {x: 0, y: 0, z: 0}
---- !u!114 &114401471354744374
-MonoBehaviour:
-  m_ObjectHideFlags: 1
-  m_PrefabParentObject: {fileID: 0}
-  m_PrefabInternal: {fileID: 100100000}
-  m_GameObject: {fileID: 1217977008606702}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 1fca7e8501ff44e14b1a16224ba238fc, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
 --- !u!114 &114728243400380842
 MonoBehaviour:
   m_ObjectHideFlags: 1
