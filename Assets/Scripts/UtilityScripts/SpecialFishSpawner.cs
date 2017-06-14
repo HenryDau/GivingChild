@@ -4,7 +4,11 @@ using UnityEngine;
 
 public class SpecialFishSpawner : MonoBehaviour {
 
-	public List<GameObject> objectToSpawn; // the prefab for which to spawn
+	public List<GameObject> commonFish;
+	public List<GameObject> rareFish;
+	public List<GameObject> epicFish;
+	public List<GameObject> legendaryFish;
+
 	public float maxY = 50.0f; // value
 	public float minY = -50.0f;
 	public float spawnChance = 1f; //percent chance per second to spawn
@@ -33,27 +37,26 @@ public class SpecialFishSpawner : MonoBehaviour {
 				Vector3 position = new Vector3 (-200, Random.Range (minY, maxY), 28);
 
 				int i = Random.Range (0, 1000);
-				int fishIndex;
+				GameObject fish;
 
 				if (i < COMMON) {
 					//Spawn Common
-					fishIndex = Random.Range(0,4);
+					fish = commonFish[Random.Range(0, commonFish.Count)];
 
 				} else if (i < COMMON + RARE) { 
 					// Spawn Rare
-					fishIndex = Random.Range(5,9);
+					fish = rareFish[Random.Range(0, rareFish.Count)];
 
 				} else if (i < COMMON + RARE + EPIC) {
 					// Spawn Epic
-					fishIndex = Random.Range(10,12);
+					fish = epicFish[Random.Range(0, epicFish.Count)];
 
 				} else {
 					// Spawn Legendary
-					fishIndex = Random.Range(13,objectToSpawn.Count);
+					fish = legendaryFish[Random.Range(0, legendaryFish.Count)];
 				}
 
-				Instantiate (objectToSpawn[fishIndex], position, Quaternion.identity);
-				//}
+				Instantiate (fish, position, Quaternion.identity);
 			}
 		}
 	}
