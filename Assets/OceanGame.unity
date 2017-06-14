@@ -1148,6 +1148,7 @@ MonoBehaviour:
   point: 0
   trashMissed: 0
   pointText: {fileID: 905153399}
+  skin: {fileID: 11400000, guid: 51ed750c9bd104b4886853ddd4cb3706, type: 2}
 --- !u!4 &1122194423
 Transform:
   m_ObjectHideFlags: 0
@@ -1681,6 +1682,7 @@ MonoBehaviour:
   max_X: 150
   min_Y: -50
   max_Y: 50
+  skin: {fileID: 11400000, guid: 51ed750c9bd104b4886853ddd4cb3706, type: 2}
 --- !u!1 &1739216146
 GameObject:
   m_ObjectHideFlags: 0
