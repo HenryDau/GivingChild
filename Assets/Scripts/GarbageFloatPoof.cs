@@ -4,8 +4,8 @@ using System.Collections.Generic;
 using UnityEngine;
 
 public class GarbageFloatPoof : MonoBehaviour {
-
-	public int X_BOUND = 175;
+    public GameObject dustParticle; // the prefab for which to spawn
+    public int X_BOUND = 175;
 	public int Y_BOUND = 75;
 	public float MAX_SPEED = 1.5f;
 
@@ -52,6 +52,9 @@ public class GarbageFloatPoof : MonoBehaviour {
 			Points.point += 1;
 
 			Destroy (gameObject);
+
+            //Spawn Bubbles
+            Instantiate(dustParticle, transform.position, Quaternion.identity);
 		}
        
 	}
