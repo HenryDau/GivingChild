@@ -108,17 +108,19 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   objectToSpawn: {fileID: 1690333722025414}
-  MAX_SIZE: 8
-  MIN_SIZE: 4
+  MAX_SIZE: 7
+  MIN_SIZE: 6
   GROWTH_RATE: 0.3
   MIN_X: -150
   MIN_Y: -75
   MAX_X: 150
   MAX_Y: -30
-  Z_SPAWN: 49
+  MIN_Z: 50
+  MAX_Z: 60
   randomizeRotation: 0
   growOnPoint: 1
   growOnMiss: 0
+  changeSizeDynamically: 1
 --- !u!212 &212392673235512608
 SpriteRenderer:
   m_ObjectHideFlags: 1

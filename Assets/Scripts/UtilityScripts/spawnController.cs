@@ -10,7 +10,7 @@ public class spawnController : MonoBehaviour
     public List<GameObject> objectToSpawn; // the prefab for which to spawn
     public float maxY = 50.0f; // value
     public float minY = -50.0f;
-    public float spawnChance = 90f; //percent chance per second to spawn
+    public float spawnChance = 90f; //number of frames to spawn something
 	int counter = 0;
 
     // Use this for initialization
@@ -23,7 +23,7 @@ public class spawnController : MonoBehaviour
     void Update()
     {
 		counter++;
-        float random = Random.Range(0f, 100.0f);
+        //float random = Random.Range(0f, 100.0f);
 		if (counter % spawnChance == 0 && !GlobalVariables.isPaused) {
 			//if (random < (spawnChance) * Time.deltaTime) {
 				//Vector3 position = new Vector3 (transform.position.x, Random.Range (minY, maxY), 18);

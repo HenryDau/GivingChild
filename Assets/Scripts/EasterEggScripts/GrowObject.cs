@@ -2,10 +2,6 @@
 using System.Collections.Generic;
 using UnityEngine;
 
-using System.Collections;
-using System.Collections.Generic;
-using UnityEngine;
-
 public class GrowObject : MonoBehaviour {
 
 	public GameObject objectToSpawn; // the prefab for which to spawn
@@ -18,13 +14,15 @@ public class GrowObject : MonoBehaviour {
 	public int MIN_Y = -75;
 	public int MAX_X = 150;
 	public int MAX_Y = -30;
-	public int Z_SPAWN = 49;
+	public int MIN_Z = 49;
+	public int MAX_Z = 49;
 
 	public bool randomizeRotation = false;
 	public bool growOnPoint = true;
 	public bool growOnMiss = false;
+	public bool changeSizeDynamically = true;
 
-	private int size;
+	private float size;
 	private int lastPoint;
 	private int lastMissed;
 	PointCounter points;
@@ -32,13 +30,26 @@ public class GrowObject : MonoBehaviour {
 	// Use this for initialization
 	void Start () {
 
-		transform.position = new Vector3 (Random.Range(MIN_X, MAX_X), Random.Range (MIN_Y, MAX_Y), Z_SPAWN);
 
 		if (randomizeRotation){
 			transform.rotation = Quaternion.AngleAxis (Random.Range(0,360), Vector3.forward);
 		}
 
-		size = Random.Range (MIN_SIZE, MAX_SIZE);
+		// Come up with position variables
+		int newY = Random.Range (MIN_Y, MAX_Y);
+		float newZ = (float)MAX_Z - (float)newY / (float)MIN_Y * ((float)MAX_Z - (float)MIN_Z);
+
+		if (changeSizeDynamically) {
+			
+			transform.position = new Vector3 (Random.Range(MIN_X, MAX_X), newY, newZ);
+			size = (float)Random.Range (MIN_SIZE, MAX_SIZE) * (((float)MAX_Z - (float)transform.position.z) / ((float)MAX_Z - (float)MIN_Z));
+		
+		} else {
+			
+			transform.position = new Vector3 (Random.Range(MIN_X, MAX_X), newY, Random.Range(MIN_Z, MAX_Z));
+			size = (float)Random.Range (MIN_SIZE, MAX_SIZE);
+		}
+
 		transform.localScale = new Vector3 (0, 0, 0);
 
 		if (growOnPoint) {

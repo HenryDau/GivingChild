@@ -60,10 +60,12 @@ MonoBehaviour:
   MIN_Y: -60
   MAX_X: 150
   MAX_Y: 60
-  Z_SPAWN: -2
+  MIN_Z: 49
+  MAX_Z: 49
   randomizeRotation: 1
   growOnPoint: 0
   growOnMiss: 1
+  changeSizeDynamically: 0
 --- !u!212 &212769582670859498
 SpriteRenderer:
   m_ObjectHideFlags: 1
