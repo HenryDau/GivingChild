@@ -10,6 +10,12 @@ public class SpecialFishSpawner : MonoBehaviour {
 	public float spawnChance = 1f; //percent chance per second to spawn
 	int counter = 500;
 
+	// Rarities for fish spawning
+	const int LEGENDARY = 50;
+	const int EPIC = 150;
+	const int RARE = 300;
+	const int COMMON = 500;
+
 	// Use this for initialization
 	void Start () {
 		
@@ -25,7 +31,28 @@ public class SpecialFishSpawner : MonoBehaviour {
 				//if (random < (spawnChance) * Time.deltaTime) {
 				//Vector3 position = new Vector3 (transform.position.x, Random.Range (minY, maxY), 18);
 				Vector3 position = new Vector3 (-200, Random.Range (minY, maxY), 28);
-				Instantiate (objectToSpawn [Random.Range (0, objectToSpawn.Count)], position, Quaternion.identity);
+
+				int i = Random.Range (0, 1000);
+				int fishIndex;
+
+				if (i < COMMON) {
+					//Spawn Common
+					fishIndex = Random.Range(0,4);
+
+				} else if (i < COMMON + RARE) { 
+					// Spawn Rare
+					fishIndex = Random.Range(5,9);
+
+				} else if (i < COMMON + RARE + EPIC) {
+					// Spawn Epic
+					fishIndex = Random.Range(10,12);
+
+				} else {
+					// Spawn Legendary
+					fishIndex = Random.Range(13,objectToSpawn.Count);
+				}
+
+				Instantiate (objectToSpawn[fishIndex], position, Quaternion.identity);
 				//}
 			}
 		}

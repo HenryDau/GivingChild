@@ -46,6 +46,7 @@
     </Reference>
   </ItemGroup>
   <ItemGroup>
+     <Compile Include="Assets\DustDestroy.cs" />
      <Compile Include="Assets\GlobalVariables.cs" />
      <Compile Include="Assets\Menu\LoadLevels.cs" />
      <Compile Include="Assets\MusicScript.cs" />
