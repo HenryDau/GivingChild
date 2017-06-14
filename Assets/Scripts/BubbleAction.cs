@@ -23,11 +23,23 @@ public class BubbleAction : MonoBehaviour {
 			PointCounter Points = PointCounter.GetComponent<PointCounter> ();
 			Points.point += 1;
 
-			GameObject Dropplay = GameObject.Find ("Playdrop");
-			Playdropscript drop = Dropplay.GetComponent<Playdropscript> ();
-			drop.play ();
-
 			Destroy (trashInstance);
+
 		}
+		GameObject SwooshPlay = GameObject.Find ("Playswoosh");
+		playbottlescript swoosh = SwooshPlay.GetComponent<playbottlescript> ();
+		swoosh.play ();
+	}
+
+	public void Reward(GameObject[] allTrash, string overload) {
+
+		for (int i = 0; i < allTrash.Length; i++) {
+			GameObject trashInstance = allTrash [i];
+			Destroy (trashInstance);
+
+		}
+		GameObject Squeakplay = GameObject.Find ("Playsqueak");
+		playbottlescript squeak = Squeakplay.GetComponent<playbottlescript> ();
+		squeak.play ();
 	}
 }

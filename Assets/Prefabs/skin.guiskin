@@ -11,7 +11,7 @@ MonoBehaviour:
   m_Script: {fileID: 12001, guid: 0000000000000000e000000000000000, type: 0}
   m_Name: skin
   m_EditorClassIdentifier: 
-  m_Font: {fileID: 12800000, guid: ce739b72ba3a64fd7b4f3641d2e1cae6, type: 3}
+  m_Font: {fileID: 12800000, guid: 1983580c0ca57e246bd6d23197e9f0cf, type: 3}
   m_box:
     m_Name: box
     m_Normal:
@@ -133,7 +133,7 @@ MonoBehaviour:
       m_Right: 0
       m_Top: 0
       m_Bottom: 0
-    m_Font: {fileID: 12800000, guid: ce739b72ba3a64fd7b4f3641d2e1cae6, type: 3}
+    m_Font: {fileID: 12800000, guid: 1983580c0ca57e246bd6d23197e9f0cf, type: 3}
     m_FontSize: 35
     m_FontStyle: 0
     m_Alignment: 4

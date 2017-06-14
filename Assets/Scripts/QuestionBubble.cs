@@ -192,23 +192,37 @@ public class QuestionBubble : MonoBehaviour {
 			showExtra = false;
 			GlobalVariables.isPaused = false;
 			Destroy(gameObject);
-			Punish ();
+			Action ();
 
 		}
 
 	}
 
-	void  Punish()
+	void  Action()
 	{
 		GameObject action = GameObject.Find ("WallSpawner");
 		BubbleAction consequence = action.GetComponent<BubbleAction> ();
 		if (!wasCorrect) {
-			
+
 			consequence.Punish ();
 		} else {
 
-			GameObject[] allTrash = GameObject.FindGameObjectsWithTag("Trash");
-			consequence.Reward (allTrash);
+
+			int randomPowerUp = Random.Range (0, 3);
+
+			if (randomPowerUp == 0) {
+				GameObject[] allTrash = GameObject.FindGameObjectsWithTag ("Trash");
+				consequence.Reward (allTrash);
+
+			} else if (randomPowerUp == 1) {
+				TroutControl.healFish ();
+
+
+			} else if (randomPowerUp == 2) {
+				GameObject[] allOil = GameObject.FindGameObjectsWithTag ("Oil");
+				consequence.Reward (allOil, "Oil");
+			}
+				
 		}
 
 	}
