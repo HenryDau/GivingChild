@@ -1,14 +1,16 @@
-﻿using System.Collections;
+﻿//RockDust
+using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
 
 public class RockDust : MonoBehaviour
 {
-    
+    public GameObject objectToSpawn; // the prefab for which to spawn
+
     // Use this for initialization
     void Start()
     {
-        
+
     }
 
     // Update is called once per frame
@@ -19,13 +21,10 @@ public class RockDust : MonoBehaviour
 
     void OnCollisionEnter(Collision collision)
     {
-        ParticleSystem dust;
-        dust = GameObject.Find("Dust").GetComponent<ParticleSystem>();
+
         ContactPoint contact = collision.contacts[0];
-        dust.transform.position = contact.point;
-        dust.Play();
-        
-        
+        Instantiate(objectToSpawn, contact.point, Quaternion.identity);
+
+
     }
 }
-

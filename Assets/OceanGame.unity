@@ -5268,6 +5268,8 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: ca33da394d0a0c445aea1b524850d1e5, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  objectToSpawn: {fileID: 1297973949133632, guid: 32a227a9c8c519b47ba10e0e67a68cc0,
+    type: 2}
 --- !u!1 &1930552128
 GameObject:
   m_ObjectHideFlags: 0
