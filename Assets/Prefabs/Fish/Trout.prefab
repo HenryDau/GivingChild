@@ -22,6 +22,7 @@ GameObject:
   - component: {fileID: 212023397923618548}
   - component: {fileID: 61223639458180886}
   - component: {fileID: 114815409663745164}
+  - component: {fileID: 95673534537401282}
   m_Layer: 0
   m_Name: Trout
   m_TagString: Untagged
@@ -167,6 +168,23 @@ BoxCollider2D:
   serializedVersion: 2
   m_Size: {x: 6.4, y: 4.3763337}
   m_EdgeRadius: 0
+--- !u!95 &95673534537401282
+Animator:
+  serializedVersion: 3
+  m_ObjectHideFlags: 1
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 100100000}
+  m_GameObject: {fileID: 1202121159992504}
+  m_Enabled: 1
+  m_Avatar: {fileID: 0}
+  m_Controller: {fileID: 9100000, guid: ba0f4419df6a1a749819b38a024d3573, type: 2}
+  m_CullingMode: 0
+  m_UpdateMode: 0
+  m_ApplyRootMotion: 0
+  m_LinearVelocityBlending: 0
+  m_WarningMessage: 
+  m_HasTransformHierarchy: 1
+  m_AllowConstantClipSamplingOptimization: 1
 --- !u!108 &108463392239082658
 Light:
   m_ObjectHideFlags: 1
