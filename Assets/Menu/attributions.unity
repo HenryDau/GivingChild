@@ -372,6 +372,12 @@ Prefab:
       propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.data[0].m_Arguments.m_StringArgument
       value: developers
       objectReference: {fileID: 0}
+    - target: {fileID: 114344130804554794, guid: c68e96438c593c74aaddaa4d04d69dc9,
+        type: 2}
+      propertyPath: m_FontData.m_Font
+      value: 
+      objectReference: {fileID: 12800000, guid: 1983580c0ca57e246bd6d23197e9f0cf,
+        type: 3}
     m_RemovedComponents:
     - {fileID: 58699047970325478, guid: c68e96438c593c74aaddaa4d04d69dc9, type: 2}
     - {fileID: 50264916273912870, guid: c68e96438c593c74aaddaa4d04d69dc9, type: 2}
@@ -656,18 +662,7 @@ MonoBehaviour:
     m_HorizontalOverflow: 0
     m_VerticalOverflow: 0
     m_LineSpacing: 1
-  m_Text: 'Attributions
-
-
-    Music
-
-
-    Images
-
-    provided by Pixabay.com
-
-
-    Font'
+  m_Text: "Attributions\n\nMusic\n\nImages provided by \npixabay.com & clipartall.com\n\nFont"
 --- !u!222 &1671822577
 CanvasRenderer:
   m_ObjectHideFlags: 0

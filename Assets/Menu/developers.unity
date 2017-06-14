@@ -166,7 +166,7 @@ MonoBehaviour:
     m_TypeName: UnityEngine.UI.MaskableGraphic+CullStateChangedEvent, UnityEngine.UI,
       Version=1.0.0.0, Culture=neutral, PublicKeyToken=null
   m_FontData:
-    m_Font: {fileID: 12800000, guid: ce739b72ba3a64fd7b4f3641d2e1cae6, type: 3}
+    m_Font: {fileID: 12800000, guid: 1983580c0ca57e246bd6d23197e9f0cf, type: 3}
     m_FontSize: 24
     m_FontStyle: 0
     m_BestFit: 0
@@ -450,6 +450,12 @@ Prefab:
       propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.data[0].m_Arguments.m_StringArgument
       value: about
       objectReference: {fileID: 0}
+    - target: {fileID: 114344130804554794, guid: c68e96438c593c74aaddaa4d04d69dc9,
+        type: 2}
+      propertyPath: m_FontData.m_Font
+      value: 
+      objectReference: {fileID: 12800000, guid: 1983580c0ca57e246bd6d23197e9f0cf,
+        type: 3}
     m_RemovedComponents:
     - {fileID: 58699047970325478, guid: c68e96438c593c74aaddaa4d04d69dc9, type: 2}
     - {fileID: 50264916273912870, guid: c68e96438c593c74aaddaa4d04d69dc9, type: 2}
@@ -867,27 +873,27 @@ MonoBehaviour:
     Colorado School of Mines -- Computer Science Field Session 2017
 
 
-    Henry Dau
+    Henry Dau - henryadau@gmail.com
 
     Noah Deibert
 
     Edgar Gutierrez
 
-    Coleman Hoyt
+    Coleman Hoyt - choyt@mines.edu
 
-    Niall Miner
+    Niall Miner - niallminer@gmail.com
 
-    Han Nguyen
+    Han Nguyen - hanguyen@mines.edu
 
-    Mark Reifsteck
+    Mark Reifsteck - mwreifsteck@mines.edu
 
-    Gett Villanueva
+    Gett Villanueva - gvillanueva@mines.edu
 
-    Charles Widdicombe
+    Charles Widdicombe - cwiddico@mines.edu
 
-    Brian Yoon
+    Brian Yoon - byoon@mines.edu
 
-    Sean Zusi'
+    Sean Zusi - szusi@mines.edu'
 --- !u!222 &1671822577
 CanvasRenderer:
   m_ObjectHideFlags: 0
