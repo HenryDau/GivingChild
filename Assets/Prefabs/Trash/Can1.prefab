@@ -99,6 +99,8 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 2f08c11115cf3413e833098d7e2205ae, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  dustParticle: {fileID: 1297973949133632, guid: 32a227a9c8c519b47ba10e0e67a68cc0,
+    type: 2}
   X_BOUND: 175
   Y_BOUND: 75
   MAX_SPEED: 2
