@@ -291,6 +291,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: ca33da394d0a0c445aea1b524850d1e5, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  objectToSpawn: {fileID: 0}
 --- !u!50 &358709778
 Rigidbody2D:
   serializedVersion: 4
@@ -532,12 +533,12 @@ MonoBehaviour:
     m_TypeName: UnityEngine.UI.MaskableGraphic+CullStateChangedEvent, UnityEngine.UI,
       Version=1.0.0.0, Culture=neutral, PublicKeyToken=null
   m_FontData:
-    m_Font: {fileID: 12800000, guid: ce739b72ba3a64fd7b4f3641d2e1cae6, type: 3}
-    m_FontSize: 119
+    m_Font: {fileID: 12800000, guid: 1983580c0ca57e246bd6d23197e9f0cf, type: 3}
+    m_FontSize: 159
     m_FontStyle: 0
     m_BestFit: 0
-    m_MinSize: 4
-    m_MaxSize: 119
+    m_MinSize: 1
+    m_MaxSize: 159
     m_Alignment: 4
     m_AlignByGeometry: 0
     m_RichText: 1
@@ -606,12 +607,12 @@ MonoBehaviour:
     m_TypeName: UnityEngine.UI.MaskableGraphic+CullStateChangedEvent, UnityEngine.UI,
       Version=1.0.0.0, Culture=neutral, PublicKeyToken=null
   m_FontData:
-    m_Font: {fileID: 12800000, guid: ce739b72ba3a64fd7b4f3641d2e1cae6, type: 3}
-    m_FontSize: 119
+    m_Font: {fileID: 12800000, guid: 1983580c0ca57e246bd6d23197e9f0cf, type: 3}
+    m_FontSize: 159
     m_FontStyle: 0
     m_BestFit: 0
     m_MinSize: 4
-    m_MaxSize: 119
+    m_MaxSize: 159
     m_Alignment: 4
     m_AlignByGeometry: 0
     m_RichText: 1
@@ -727,6 +728,12 @@ Prefab:
       propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.data[0].m_Target
       value: 
       objectReference: {fileID: 1690670735}
+    - target: {fileID: 114344130804554794, guid: c68e96438c593c74aaddaa4d04d69dc9,
+        type: 2}
+      propertyPath: m_FontData.m_Font
+      value: 
+      objectReference: {fileID: 12800000, guid: 1983580c0ca57e246bd6d23197e9f0cf,
+        type: 3}
     m_RemovedComponents: []
   m_ParentPrefab: {fileID: 100100000, guid: c68e96438c593c74aaddaa4d04d69dc9, type: 2}
   m_IsPrefabParent: 0
@@ -781,6 +788,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: ca33da394d0a0c445aea1b524850d1e5, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  objectToSpawn: {fileID: 0}
 --- !u!50 &1011189918
 Rigidbody2D:
   serializedVersion: 4
@@ -1111,12 +1119,12 @@ MonoBehaviour:
     m_TypeName: UnityEngine.UI.MaskableGraphic+CullStateChangedEvent, UnityEngine.UI,
       Version=1.0.0.0, Culture=neutral, PublicKeyToken=null
   m_FontData:
-    m_Font: {fileID: 12800000, guid: ce739b72ba3a64fd7b4f3641d2e1cae6, type: 3}
-    m_FontSize: 119
+    m_Font: {fileID: 12800000, guid: 1983580c0ca57e246bd6d23197e9f0cf, type: 3}
+    m_FontSize: 159
     m_FontStyle: 0
     m_BestFit: 0
-    m_MinSize: 4
-    m_MaxSize: 119
+    m_MinSize: 1
+    m_MaxSize: 159
     m_Alignment: 4
     m_AlignByGeometry: 0
     m_RichText: 1
@@ -1509,6 +1517,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: ca33da394d0a0c445aea1b524850d1e5, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  objectToSpawn: {fileID: 0}
 --- !u!50 &1982274935
 Rigidbody2D:
   serializedVersion: 4
