@@ -3,9 +3,9 @@ using System.Collections.Generic;
 using UnityEngine;
 
 public class TroutControl : MonoBehaviour {
-	GameObject fish1;
-	GameObject fish2;
-	GameObject fish3;
+	static GameObject fish1;
+	static GameObject fish2;
+	static GameObject fish3;
 	Vector3 position;
 
 	public GameObject objectToSpawn;
@@ -33,5 +33,24 @@ public class TroutControl : MonoBehaviour {
 			}
 		}
 
+	}
+
+	public static void healFish() {
+		if (!fish1.GetComponent<fishHP> ().isDead) {
+			fish1.GetComponent<fishHP> ().curr_HP = 100;
+			fish1.GetComponent<fishHP> ().setHpBar ();
+		}
+		if (!fish2.GetComponent<fishHP> ().isDead) {
+			fish2.GetComponent<fishHP> ().curr_HP = 100;
+			fish2.GetComponent<fishHP> ().setHpBar ();
+		}
+		if (!fish3.GetComponent<fishHP> ().isDead) {
+			fish3.GetComponent<fishHP> ().curr_HP = 100;
+			fish3.GetComponent<fishHP> ().setHpBar ();
+		}
+		GameObject HealPlay = GameObject.Find ("Playheal");
+		PlayHealingScript heal = HealPlay.GetComponent<PlayHealingScript> ();
+		heal.play ();
+		
 	}
 }

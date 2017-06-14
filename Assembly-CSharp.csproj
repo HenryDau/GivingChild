@@ -63,6 +63,7 @@
      <Compile Include="Assets\Scripts\GarbageFloatDraggable.cs" />
      <Compile Include="Assets\Scripts\GarbageFloatPoof.cs" />
      <Compile Include="Assets\Scripts\Interactable.cs" />
+     <Compile Include="Assets\Scripts\PlayHealingScript.cs" />
      <Compile Include="Assets\Scripts\Playdropscript.cs" />
      <Compile Include="Assets\Scripts\PointCounter.cs" />
      <Compile Include="Assets\Scripts\Question.cs" />
