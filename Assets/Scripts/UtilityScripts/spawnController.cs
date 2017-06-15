@@ -16,7 +16,7 @@ public class spawnController : MonoBehaviour
     // Use this for initialization
     void Start()
     {
-
+		spawnChance = 120f - (20 * GlobalVariables.difficulty);
     }
 
     // Update is called once per frame

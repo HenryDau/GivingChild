@@ -17,7 +17,7 @@ public class SpawnQuestions : MonoBehaviour {
 	
 	// Update is called once per frame
 	void Update () {
-		if (!GlobalVariables.isPaused) {
+		if (GlobalVariables.difficulty >= 3 && !GlobalVariables.isPaused) {
 			counter++;
 			if (counter % spawnChance == 0) {
 				Vector3 position = new Vector3 (200, Random.Range (minY, maxY), 18);

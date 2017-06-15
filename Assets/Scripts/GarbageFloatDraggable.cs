@@ -18,7 +18,7 @@ public class GarbageFloatDraggable : MonoBehaviour {
 
 	// Use this for initialization
 	void Start () {
-		int speed = Random.Range (5, 10);
+		int speed = Random.Range (5, 8 + (2 * GlobalVariables.difficulty));
 		rb = GetComponent<Rigidbody2D> ();
 		rb.velocity = new Vector3 (0, -(float)speed / 10, 0);
 		//rb.velocity = new Vector3 (15 / 10, 0, 0);
