@@ -18,4 +18,8 @@ public class LoadLevels : MonoBehaviour {
 	{
 		Application.LoadLevel(scene);
 	}
+
+	public void setDifficulty(int level) {
+		GlobalVariables.difficulty = level;
+	}
 }
