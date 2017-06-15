@@ -662,7 +662,9 @@ MonoBehaviour:
     m_HorizontalOverflow: 0
     m_VerticalOverflow: 0
     m_LineSpacing: 1
-  m_Text: "Attributions\n\nMusic\n\n\nImages provided by \npixabay.com & clipartall.com\n\nFont"
+  m_Text: "Attributions\n\nMusic provided by\nKevin MacLeod -- incompetech.com\nCreative
+    Commons: Attribution 3.0\n\n\nImages provided by \npixabay.com & clipartall.com\n\nFont
+    provided by\nEzeqviel Ergo -- behance.net/eergohiki"
 --- !u!222 &1671822577
 CanvasRenderer:
   m_ObjectHideFlags: 0

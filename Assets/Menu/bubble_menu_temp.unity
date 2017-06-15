@@ -611,9 +611,7 @@ MonoBehaviour:
     m_HorizontalOverflow: 0
     m_VerticalOverflow: 0
     m_LineSpacing: 1
-  m_Text: 'Toddler
-
-    Mode'
+  m_Text: Toddler
 --- !u!222 &569184249
 CanvasRenderer:
   m_ObjectHideFlags: 0
@@ -810,7 +808,7 @@ MonoBehaviour:
     m_LineSpacing: 1
   m_Text: 'Super
 
-    Kid Mode'
+    Kid'
 --- !u!222 &812939749
 CanvasRenderer:
   m_ObjectHideFlags: 0
@@ -1812,17 +1810,6 @@ MonoBehaviour:
         m_Arguments:
           m_ObjectArgument: {fileID: 0}
           m_ObjectArgumentAssemblyTypeName: 
-          m_IntArgument: 0
-          m_FloatArgument: 0
-          m_StringArgument: 
-          m_BoolArgument: 0
-        m_CallState: 2
-      - m_Target: {fileID: 1690670735}
-        m_MethodName: setDifficulty
-        m_Mode: 3
-        m_Arguments:
-          m_ObjectArgument: {fileID: 0}
-          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
           m_IntArgument: 0
           m_FloatArgument: 0
           m_StringArgument: 

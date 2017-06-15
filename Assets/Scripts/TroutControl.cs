@@ -22,17 +22,19 @@ public class TroutControl : MonoBehaviour {
 
 	// Use this for initialization
 	void Start () {
-		position = new Vector3 (Random.Range(min_X, max_X), Random.Range(min_Y, max_Y), 28);
-		fish1 = Instantiate (objectToSpawn, position, Quaternion.identity);
-		position = new Vector3 (Random.Range(min_X, max_X), Random.Range(min_Y, max_Y), 28);
-		fish2 = Instantiate (objectToSpawn, position, Quaternion.identity);
-		position = new Vector3 (Random.Range(min_X, max_X), Random.Range(min_Y, max_Y), 28);
-		fish3 = Instantiate (objectToSpawn, position, Quaternion.identity);
+		if (GlobalVariables.difficulty >= 2) {
+			position = new Vector3 (Random.Range(min_X, max_X), Random.Range(min_Y, max_Y), 28);
+			fish1 = Instantiate (objectToSpawn, position, Quaternion.identity);
+			position = new Vector3 (Random.Range(min_X, max_X), Random.Range(min_Y, max_Y), 28);
+			fish2 = Instantiate (objectToSpawn, position, Quaternion.identity);
+			position = new Vector3 (Random.Range(min_X, max_X), Random.Range(min_Y, max_Y), 28);
+			fish3 = Instantiate (objectToSpawn, position, Quaternion.identity);
+		}
 	}
 	
 	// Update is called once per frame
 	void Update () {
-		if (!GlobalVariables.isPaused) {
+		if (GlobalVariables.difficulty >= 2 && !GlobalVariables.isPaused) {
 			if (fish1.GetComponent<fishHP> ().isDead && fish2.GetComponent<fishHP> ().isDead && fish3.GetComponent<fishHP> ().isDead) {
 				//print ("Fish are dead");
 				showLoseMenu = true;
