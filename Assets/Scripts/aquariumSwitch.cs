@@ -5,7 +5,7 @@ using UnityEngine.SceneManagement;
 
 public class aquariumSwitch : MonoBehaviour {
 
-    public Object switchScene;
+    public string switchScene;
     
 	// Use this for initialization
 	void Start () {
@@ -19,7 +19,8 @@ public class aquariumSwitch : MonoBehaviour {
 
     private void OnMouseDown()
     {
-        SceneManager.LoadScene(switchScene.name, LoadSceneMode.Single);
+        //SceneManager.LoadScene(switchScene.name);
+        Application.LoadLevel(switchScene);
     }
 
 

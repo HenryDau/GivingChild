@@ -321,7 +321,7 @@ RectTransform:
   m_AnchorMin: {x: 0.5, y: 0.5}
   m_AnchorMax: {x: 0.5, y: 0.5}
   m_AnchoredPosition: {x: 16, y: 230}
-  m_SizeDelta: {x: 300, y: 60}
+  m_SizeDelta: {x: 400, y: 60}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &812454276
 MonoBehaviour:
@@ -3696,7 +3696,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 51d3b39c0dd47e1448d79fea930c3fdc, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  switchScene: {fileID: 102900000, guid: 7b36097726e751a44910208e53ccf34d, type: 3}
+  switchScene: AquariumScene5
 --- !u!212 &1111628702
 SpriteRenderer:
   m_ObjectHideFlags: 0
@@ -4315,13 +4315,13 @@ MonoBehaviour:
     m_BestFit: 0
     m_MinSize: 4
     m_MaxSize: 45
-    m_Alignment: 0
+    m_Alignment: 1
     m_AlignByGeometry: 0
     m_RichText: 1
     m_HorizontalOverflow: 0
     m_VerticalOverflow: 0
     m_LineSpacing: 1
-  m_Text: Enter Name...
+  m_Text: Tap fish to rename
 --- !u!222 &1319104095
 CanvasRenderer:
   m_ObjectHideFlags: 0
@@ -4554,7 +4554,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   fishID: manatee1
   fishName: Jake
-  fishOwned: 0
+  fishOwned: 1
 --- !u!1 &1438774299
 GameObject:
   m_ObjectHideFlags: 0
@@ -4916,7 +4916,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 51d3b39c0dd47e1448d79fea930c3fdc, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  switchScene: {fileID: 102900000, guid: e948195eddaca44d8b0edddf3aa10b96, type: 3}
+  switchScene: AquariumScene1
 --- !u!212 &2053901735
 SpriteRenderer:
   m_ObjectHideFlags: 0
