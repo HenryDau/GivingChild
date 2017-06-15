@@ -25,6 +25,9 @@ public class QuestionBubble : MonoBehaviour {
 	void Start () {
 		wasCorrect = false;
 		speed = Random.Range (-0.5f, -1.0f);
+		if (transform.position.x < 0) {
+			speed = -speed;
+		}
 		initialY = transform.localPosition.y;
 		phase_angle = Random.Range (0.0f, 360.0f);
 
@@ -207,20 +210,15 @@ public class QuestionBubble : MonoBehaviour {
 			consequence.Punish ();
 		} else {
 
+			GameObject[] allTrash = GameObject.FindGameObjectsWithTag ("Trash");
+			GameObject[] allOil = GameObject.FindGameObjectsWithTag ("Oil");
 
-			int randomPowerUp = Random.Range (0, 3);
-
-			if (randomPowerUp == 0) {
-				GameObject[] allTrash = GameObject.FindGameObjectsWithTag ("Trash");
+			if (allTrash.Count() >= 10) {
 				consequence.Reward (allTrash);
-
-			} else if (randomPowerUp == 1) {
-				TroutControl.healFish ();
-
-
-			} else if (randomPowerUp == 2) {
-				GameObject[] allOil = GameObject.FindGameObjectsWithTag ("Oil");
+			} else if (allOil.Count() >= 5) {
 				consequence.Reward (allOil, "Oil");
+			} else {
+				TroutControl.healFish ();
 			}
 				
 		}
