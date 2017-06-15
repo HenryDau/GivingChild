@@ -95,6 +95,7 @@ public class fishHP : MonoBehaviour {
 
 	void floatUp() {
 		isDead = true;
+        GetComponent<Animator>().speed = 0;
 		sr.flipY = true;
 		goal = new Vector3 (transform.position.x, 100, transform.position.z);
 		speed = Random.Range (min_speed, max_speed);
