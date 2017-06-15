@@ -20,7 +20,13 @@ public class SpawnQuestions : MonoBehaviour {
 		if (GlobalVariables.difficulty >= 3 && !GlobalVariables.isPaused) {
 			counter++;
 			if (counter % spawnChance == 0) {
-				Vector3 position = new Vector3 (200, Random.Range (minY, maxY), 18);
+				Vector3 position;
+				if (Random.Range (0, 2) == 0) {
+					position = new Vector3 (200, Random.Range (minY, maxY), 18);
+				} else {
+					position = new Vector3 (-200, Random.Range (minY, maxY), 18);
+				}
+
 				Instantiate (objectToSpawn, position, Quaternion.identity);
 			}
 		}

@@ -1,6 +1,8 @@
 ﻿using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
+using System.Runtime.Serialization.Formatters.Binary;
+using System.IO;
 
 public class Swim : MonoBehaviour {
 
@@ -9,6 +11,8 @@ public class Swim : MonoBehaviour {
 	public bool clickable = false;
 	public int MIN_SPEED = 5;
 	public int MAX_SPEED = 15;
+    public int maxFishInAquarium = 1;
+    public string fishID;
 
 	// Use this for initialization
 	void Start () {
@@ -45,8 +49,49 @@ public class Swim : MonoBehaviour {
             Sparklescript sparkle = source.GetComponent<Sparklescript>();
             sparkle.play();
 
-            Debug.Log ("Add to aquarium");
+            //Debug.Log ("Add to aquarium");
+            int counter = 1;
+            while (counter <= maxFishInAquarium)
+            {
+                if (File.Exists(Application.persistentDataPath + "/" + fishID + counter + ".dat"))
+                {
+                    //read from file
+                    BinaryFormatter bf = new BinaryFormatter();
+                    FileStream file = File.Open(Application.persistentDataPath + "/" + fishID + counter + ".dat", FileMode.Open);
+                    FishData data = (FishData)bf.Deserialize(file);
+                    file.Close();
+                    //checks data from the FishData Class
+                    if (data.unlocked == false)
+                    {
+                        Debug.Log("Editing created file to unlock fish");
+                        createNewSave(counter);
+                        break;
+                    }
+                }
+                else
+                {
+                    createNewSave(counter);
+                    break;
+                }
+                counter++;
+            }
 			Destroy (gameObject);
 		}
 	}
+
+    private void createNewSave(int number)
+    {
+        //create a new file
+        BinaryFormatter bf = new BinaryFormatter();
+        FileStream file = File.Create(Application.persistentDataPath + "/" + fishID + number + ".dat");
+        FishData data = new FishData();
+
+        //enter data to the class
+        data.name = "";
+        data.unlocked = true;
+
+        //serialise the class to the file
+        bf.Serialize(file, data);
+        file.Close();
+    }
 }

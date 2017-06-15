@@ -15,7 +15,10 @@ public class renameControlerScript : MonoBehaviour {
 	
 	// Update is called once per frame
 	void Update () {
-        transform.localPosition = fishToRename.transform.localPosition;
+        if (fishToRename != null)
+        {
+            transform.localPosition = fishToRename.transform.localPosition;
+        }
 	}
 
     public void renameFish(string newName)
