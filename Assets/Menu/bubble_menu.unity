@@ -1804,12 +1804,21 @@ MonoBehaviour:
           m_StringArgument: OceanGame
           m_BoolArgument: 0
         m_CallState: 2
+<<<<<<< HEAD
       - m_Target: {fileID: 753117248}
         m_MethodName: 
         m_Mode: 1
         m_Arguments:
           m_ObjectArgument: {fileID: 0}
           m_ObjectArgumentAssemblyTypeName: 
+=======
+      - m_Target: {fileID: 1690670735}
+        m_MethodName: setDifficulty
+        m_Mode: 3
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+>>>>>>> 156a4b6a61bf6b956a8bd851bfe8f72c2290bd60
           m_IntArgument: 0
           m_FloatArgument: 0
           m_StringArgument: 
