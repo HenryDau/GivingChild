@@ -155,6 +155,8 @@ MonoBehaviour:
   clickable: 1
   MIN_SPEED: 10
   MAX_SPEED: 15
+  maxFishInAquarium: 1
+  fishID: clownfish
 --- !u!198 &198967863163452330
 ParticleSystem:
   m_ObjectHideFlags: 1
