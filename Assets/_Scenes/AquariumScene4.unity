@@ -282,7 +282,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 51d3b39c0dd47e1448d79fea930c3fdc, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  switchScene: {fileID: 102900000, guid: 7b36097726e751a44910208e53ccf34d, type: 3}
+  switchScene: AquariumScene5
 --- !u!212 &349469887
 SpriteRenderer:
   m_ObjectHideFlags: 0
@@ -6112,7 +6112,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 51d3b39c0dd47e1448d79fea930c3fdc, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  switchScene: {fileID: 102900000, guid: fc533be1e6acd6943a6dcd3b37d2c050, type: 3}
+  switchScene: AquariumScene3
 --- !u!212 &1489705674
 SpriteRenderer:
   m_ObjectHideFlags: 0
