@@ -4341,6 +4341,7 @@ GameObject:
   - component: {fileID: 1373861281}
   - component: {fileID: 1373861286}
   - component: {fileID: 1373861285}
+  - component: {fileID: 1373861287}
   m_Layer: 0
   m_Name: manatee
   m_TagString: Untagged
@@ -4555,6 +4556,23 @@ MonoBehaviour:
   fishID: manatee1
   fishName: Jake
   fishOwned: 0
+--- !u!95 &1373861287
+Animator:
+  serializedVersion: 3
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 1373861280}
+  m_Enabled: 1
+  m_Avatar: {fileID: 0}
+  m_Controller: {fileID: 9100000, guid: b46a584a39a363442bb67e2c5552bb7e, type: 2}
+  m_CullingMode: 0
+  m_UpdateMode: 0
+  m_ApplyRootMotion: 0
+  m_LinearVelocityBlending: 0
+  m_WarningMessage: 
+  m_HasTransformHierarchy: 1
+  m_AllowConstantClipSamplingOptimization: 1
 --- !u!1 &1438774299
 GameObject:
   m_ObjectHideFlags: 0
