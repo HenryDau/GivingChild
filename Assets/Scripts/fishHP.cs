@@ -11,6 +11,7 @@ public class fishHP : MonoBehaviour {
 	private SpriteRenderer sr;
 	public Material normal;
 	public Material hit;
+	public Material heal;
 	private int hit_timer = 10;
 
 
@@ -46,7 +47,7 @@ public class fishHP : MonoBehaviour {
 		}
 	}
 
-	void setHpBar(float myHP) {
+	public void setHpBar(float myHP) {
 		//print (14 * (myHP / max_HP));
 		RectTransform rt = hpBar.GetComponent<RectTransform>();
 		rt.sizeDelta = new Vector2 (14 * (myHP / max_HP), 2);
@@ -54,10 +55,19 @@ public class fishHP : MonoBehaviour {
 		hit_timer = 0;
 	}
 
+	public void setHpBar() {
+		float myHP = max_HP;
+		//print (14 * (myHP / max_HP));
+		RectTransform rt = hpBar.GetComponent<RectTransform>();
+		rt.sizeDelta = new Vector2 (14 * (myHP / max_HP), 2);
+		sr.material = heal;
+		hit_timer = 0;
+	}
+
 	void Update() {
 		if (!GlobalVariables.isPaused) {
 			hit_timer++;
-			if (hit_timer == 10) {
+			if (hit_timer == 20) {
 				sr.material = normal;
 			}
 
@@ -85,6 +95,7 @@ public class fishHP : MonoBehaviour {
 
 	void floatUp() {
 		isDead = true;
+        GetComponent<Animator>().speed = 0;
 		sr.flipY = true;
 		goal = new Vector3 (transform.position.x, 100, transform.position.z);
 		speed = Random.Range (min_speed, max_speed);

@@ -80,7 +80,7 @@ BoxCollider2D:
     border: {x: 0, y: 0, z: 0, w: 0}
     pivot: {x: 0.5, y: 0.5}
     oldSize: {x: 5.13, y: 7.2}
-    newSize: {x: 7.2, y: 7.2}
+    newSize: {x: 5.13, y: 7.2}
     adaptiveTilingThreshold: 0.5
     drawMode: 0
     adaptiveTiling: 0
@@ -99,6 +99,8 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 2f08c11115cf3413e833098d7e2205ae, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  dustParticle: {fileID: 1297973949133632, guid: 32a227a9c8c519b47ba10e0e67a68cc0,
+    type: 2}
   X_BOUND: 175
   Y_BOUND: 75
   MAX_SPEED: 2
@@ -134,11 +136,11 @@ SpriteRenderer:
   m_SortingLayerID: 0
   m_SortingLayer: 0
   m_SortingOrder: 0
-  m_Sprite: {fileID: 21300000, guid: 74e4b1038517f445081693bb78e7a2ff, type: 3}
+  m_Sprite: {fileID: 21300000, guid: 50ee0e1d786eb4fd9aad4ca5b3d7bf7d, type: 3}
   m_Color: {r: 1, g: 1, b: 1, a: 1}
   m_FlipX: 0
   m_FlipY: 0
   m_DrawMode: 0
-  m_Size: {x: 7.2, y: 7.2}
+  m_Size: {x: 5.13, y: 7.2}
   m_AdaptiveModeThreshold: 0.5
   m_SpriteTileMode: 0

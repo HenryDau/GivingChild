@@ -19,7 +19,7 @@ public class MusicScript : MonoBehaviour {
         GameObject[] obj = GameObject.FindGameObjectsWithTag("Music");
         if (obj.Length > 1)
         {
-            Destroy(this.gameObject);
+            Destroy(gameObject);
         }
     }
 
