@@ -662,7 +662,7 @@ MonoBehaviour:
     m_HorizontalOverflow: 0
     m_VerticalOverflow: 0
     m_LineSpacing: 1
-  m_Text: "Attributions\n\nMusic\n\nImages provided by \npixabay.com & clipartall.com\n\nFont"
+  m_Text: "Attributions\n\nMusic\n\n\nImages provided by \npixabay.com & clipartall.com\n\nFont"
 --- !u!222 &1671822577
 CanvasRenderer:
   m_ObjectHideFlags: 0
