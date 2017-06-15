@@ -30,7 +30,7 @@ public class PointCounter : MonoBehaviour {
 		if (point >= 50) {
 			showWinMenu = true;
 		}
-		if (trashMissed >= GlobalVariables.trashToMiss) {
+		if (GlobalVariables.difficulty == 1 && trashMissed >= GlobalVariables.trashToMiss) {
 			showLoseMenu = true;
 		}
     }
