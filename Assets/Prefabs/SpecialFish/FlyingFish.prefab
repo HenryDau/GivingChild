@@ -155,6 +155,8 @@ MonoBehaviour:
   clickable: 1
   MIN_SPEED: 14
   MAX_SPEED: 15
+  maxFishInAquarium: 1
+  fishID: flyingfish
 --- !u!198 &198885286775332432
 ParticleSystem:
   m_ObjectHideFlags: 1

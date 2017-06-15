@@ -60,7 +60,11 @@ public class aquaruimFishLogic : MonoBehaviour {
             file.Close();
 
             //load data from the FishData Class
-            fishName = data.name;
+            if (data.name != "")
+            {
+                Debug.Log("default name being assigned");
+                fishName = data.name;
+            }
             fishOwned = data.unlocked;
         }
         else // create a new save file (this should happen the first time this script is loaded to initializs the save file)

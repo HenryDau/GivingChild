@@ -155,6 +155,8 @@ MonoBehaviour:
   clickable: 1
   MIN_SPEED: 5
   MAX_SPEED: 10
+  maxFishInAquarium: 1
+  fishID: otherdolphin
 --- !u!198 &198585462380608472
 ParticleSystem:
   m_ObjectHideFlags: 1
