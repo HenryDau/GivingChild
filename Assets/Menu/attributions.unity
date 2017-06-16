@@ -253,6 +253,11 @@ Prefab:
   m_Modification:
     m_TransformParent: {fileID: 1981326528}
     m_Modifications:
+    - target: {fileID: 114687209739324502, guid: c68e96438c593c74aaddaa4d04d69dc9,
+        type: 2}
+      propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.size
+      value: 2
+      objectReference: {fileID: 0}
     - target: {fileID: 224738721131279418, guid: c68e96438c593c74aaddaa4d04d69dc9,
         type: 2}
       propertyPath: m_LocalPosition.x
@@ -389,6 +394,31 @@ Prefab:
       value: 
       objectReference: {fileID: 12800000, guid: 1983580c0ca57e246bd6d23197e9f0cf,
         type: 3}
+    - target: {fileID: 114687209739324502, guid: c68e96438c593c74aaddaa4d04d69dc9,
+        type: 2}
+      propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.data[1].m_Mode
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 114687209739324502, guid: c68e96438c593c74aaddaa4d04d69dc9,
+        type: 2}
+      propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.data[1].m_CallState
+      value: 2
+      objectReference: {fileID: 0}
+    - target: {fileID: 114687209739324502, guid: c68e96438c593c74aaddaa4d04d69dc9,
+        type: 2}
+      propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.data[1].m_Target
+      value: 
+      objectReference: {fileID: 1473837287}
+    - target: {fileID: 114687209739324502, guid: c68e96438c593c74aaddaa4d04d69dc9,
+        type: 2}
+      propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.data[1].m_MethodName
+      value: Play
+      objectReference: {fileID: 0}
+    - target: {fileID: 114687209739324502, guid: c68e96438c593c74aaddaa4d04d69dc9,
+        type: 2}
+      propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.data[1].m_Arguments.m_ObjectArgumentAssemblyTypeName
+      value: UnityEngine.Object, UnityEngine
+      objectReference: {fileID: 0}
     m_RemovedComponents:
     - {fileID: 58699047970325478, guid: c68e96438c593c74aaddaa4d04d69dc9, type: 2}
     - {fileID: 50264916273912870, guid: c68e96438c593c74aaddaa4d04d69dc9, type: 2}
