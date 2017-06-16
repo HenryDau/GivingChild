@@ -32,14 +32,17 @@ public class TroutControl : MonoBehaviour {
 			position = new Vector3 (Random.Range(min_X, max_X), Random.Range(min_Y, max_Y), -2);
 			fish1 = Instantiate (objectToSpawn, position, Quaternion.identity);
 			fish1.transform.localScale *= GlobalVariables.SHRINK_FACTOR;
+			fish1.transform.parent = gameObject.transform.parent;
 
 			position = new Vector3 (Random.Range(min_X, max_X), Random.Range(min_Y, max_Y), -2);
 			fish2 = Instantiate (objectToSpawn, position, Quaternion.identity);
 			fish2.transform.localScale *= GlobalVariables.SHRINK_FACTOR;
+			fish2.transform.parent = gameObject.transform.parent;
 
 			position = new Vector3 (Random.Range(min_X, max_X), Random.Range(min_Y, max_Y), -2);
 			fish3 = Instantiate (objectToSpawn, position, Quaternion.identity);
 			fish3.transform.localScale *= GlobalVariables.SHRINK_FACTOR;
+			fish3.transform.parent = gameObject.transform.parent;
 		}
 
 	}
