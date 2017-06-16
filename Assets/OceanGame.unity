@@ -238,7 +238,7 @@ MonoBehaviour:
   - {fileID: 1752388795461022, guid: 349de3f54e6544add8b43f611adfb359, type: 2}
   maxY: 50
   minY: -50
-  spawnChance: 600
+  spawnChance: 1200
 --- !u!1 &61697144 stripped
 GameObject:
   m_PrefabParentObject: {fileID: 1558852611989280, guid: 594ea43e8427b49539fd0899297e2b5d,
