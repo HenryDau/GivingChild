@@ -17,6 +17,8 @@ public class spawnController : MonoBehaviour
     void Start()
     {
 		spawnChance = 120f - (20 * GlobalVariables.difficulty);
+		GlobalVariables.LoadCamera ();
+
     }
 
     // Update is called once per frame
@@ -27,9 +29,9 @@ public class spawnController : MonoBehaviour
 		if (counter % spawnChance == 0 && !GlobalVariables.isPaused) {
 			//if (random < (spawnChance) * Time.deltaTime) {
 				//Vector3 position = new Vector3 (transform.position.x, Random.Range (minY, maxY), 18);
-			Vector3 position = new Vector3 (-200, Random.Range (minY, maxY), 18);
-			Instantiate (objectToSpawn[Random.Range (0, objectToSpawn.Count)], position, Quaternion.identity);
-			//}
+			Vector3 position = new Vector3 (-GlobalVariables.width / 2, Random.Range (GlobalVariables.height / 2, -GlobalVariables.height / 2), 18);
+			var trash = Instantiate (objectToSpawn[Random.Range (0, objectToSpawn.Count)], position, Quaternion.identity);
+			trash.transform.localScale *= GlobalVariables.SHRINK_FACTOR;
 		}
     }
 

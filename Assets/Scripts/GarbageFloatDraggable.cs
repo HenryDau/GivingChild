@@ -4,8 +4,8 @@ using UnityEngine;
 
 public class GarbageFloatDraggable : MonoBehaviour {
 
-	public int X_BOUND = 175;
-	public int Y_BOUND = 75;
+	public float X_BOUND = GlobalVariables.width / 2f;
+	public float Y_BOUND = GlobalVariables.height / 2f;
 	public float MAX_SPEED = 1.5f;
 
 	private Rigidbody2D rb;
@@ -18,7 +18,11 @@ public class GarbageFloatDraggable : MonoBehaviour {
 
 	// Use this for initialization
 	void Start () {
-		int speed = Random.Range (5, 8 + (2 * GlobalVariables.difficulty));
+
+		X_BOUND = GlobalVariables.width / 2f;
+		Y_BOUND = GlobalVariables.height / 2f;
+
+		float speed = Random.Range (5, 8 + (2 * GlobalVariables.difficulty)) * GlobalVariables.SHRINK_FACTOR;
 		rb = GetComponent<Rigidbody2D> ();
 		rb.velocity = new Vector3 (0, -(float)speed / 10, 0);
 		//rb.velocity = new Vector3 (15 / 10, 0, 0);
@@ -27,6 +31,9 @@ public class GarbageFloatDraggable : MonoBehaviour {
 			Y_BOUND,
 			0
 		);
+
+		X_BOUND = GlobalVariables.width / 2f;
+		Y_BOUND = GlobalVariables.height / 2f;
 	}
 
 	void OnMouseDown(){
@@ -123,7 +130,7 @@ public class GarbageFloatDraggable : MonoBehaviour {
 		}
 
 		// Keep in the y bounds
-		if ((transform.position.y > Y_BOUND && rb.velocity.y > 0) || (transform.position.y < (-Y_BOUND + 15) && rb.velocity.y < 0))
+		if ((transform.position.y > Y_BOUND && rb.velocity.y > 0) || (transform.position.y < (-Y_BOUND) && rb.velocity.y < 0))
 			rb.velocity = new Vector2 (rb.velocity.x / 5, 0);//rb.velocity.y * -1);
 
 		// Make sure it stays in the same plane

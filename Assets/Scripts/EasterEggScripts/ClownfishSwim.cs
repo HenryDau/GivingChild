@@ -24,12 +24,12 @@ public class ClownfishSwim : MonoBehaviour {
 			count++;
 
 			transform.position = new Vector3 (
-				startX + (float)(count * 40 / lifetime),
+				startX + (float)(count * 4f / (float) lifetime),
 				transform.position.y,
 				transform.position.z
 			);
 
-			transform.Rotate (Vector3.down, (float)lifetime / 5 / 360);
+			//transform.Rotate (Vector3.down, (float)lifetime / 5 / 360);
 		}
 	}
 }

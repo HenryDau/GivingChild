@@ -376,7 +376,7 @@ Prefab:
     - target: {fileID: 114687209739324502, guid: c68e96438c593c74aaddaa4d04d69dc9,
         type: 2}
       propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.data[0].m_MethodName
-      value: loadScene
+      value: overloadScene
       objectReference: {fileID: 0}
     - target: {fileID: 114344130804554794, guid: c68e96438c593c74aaddaa4d04d69dc9,
         type: 2}

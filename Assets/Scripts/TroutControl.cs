@@ -22,14 +22,29 @@ public class TroutControl : MonoBehaviour {
 
 	// Use this for initialization
 	void Start () {
+
+		min_X = -GlobalVariables.width / 2;
+		max_X = GlobalVariables.width / 2;
+		min_Y = -GlobalVariables.height / 2;
+		max_Y = GlobalVariables.height / 2;
+
 		if (GlobalVariables.difficulty >= 2) {
-			position = new Vector3 (Random.Range(min_X, max_X), Random.Range(min_Y, max_Y), 28);
+			position = new Vector3 (Random.Range(min_X, max_X), Random.Range(min_Y, max_Y), -2);
 			fish1 = Instantiate (objectToSpawn, position, Quaternion.identity);
-			position = new Vector3 (Random.Range(min_X, max_X), Random.Range(min_Y, max_Y), 28);
+			fish1.transform.localScale *= GlobalVariables.SHRINK_FACTOR;
+			fish1.transform.parent = gameObject.transform.parent;
+
+			position = new Vector3 (Random.Range(min_X, max_X), Random.Range(min_Y, max_Y), -2);
 			fish2 = Instantiate (objectToSpawn, position, Quaternion.identity);
-			position = new Vector3 (Random.Range(min_X, max_X), Random.Range(min_Y, max_Y), 28);
+			fish2.transform.localScale *= GlobalVariables.SHRINK_FACTOR;
+			fish2.transform.parent = gameObject.transform.parent;
+
+			position = new Vector3 (Random.Range(min_X, max_X), Random.Range(min_Y, max_Y), -2);
 			fish3 = Instantiate (objectToSpawn, position, Quaternion.identity);
+			fish3.transform.localScale *= GlobalVariables.SHRINK_FACTOR;
+			fish3.transform.parent = gameObject.transform.parent;
 		}
+
 	}
 	
 	// Update is called once per frame

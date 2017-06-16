@@ -19,6 +19,11 @@ public class LoadLevels : MonoBehaviour {
 			Application.LoadLevel (scene);
 		}
 	}
+
+    public void overloadScene(string scene)
+    {
+        Application.LoadLevel(scene);
+    }
 		
 
     public void openUrl(string url)
