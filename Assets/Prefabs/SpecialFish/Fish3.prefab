@@ -87,8 +87,8 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   keepSwimming: 0
   clickable: 1
-  MIN_SPEED: 6
-  MAX_SPEED: 9
+  MIN_SPEED: 0.6
+  MAX_SPEED: 0.9
   maxFishInAquarium: 1
   fishID: bluefish
 --- !u!198 &198794513994448030

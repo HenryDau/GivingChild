@@ -87,8 +87,8 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   keepSwimming: 0
   clickable: 1
-  MIN_SPEED: 11
-  MAX_SPEED: 14
+  MIN_SPEED: 1.1
+  MAX_SPEED: 1.4
   maxFishInAquarium: 1
   fishID: purplefish
 --- !u!198 &198770041892438286

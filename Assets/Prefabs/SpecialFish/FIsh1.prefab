@@ -88,7 +88,7 @@ MonoBehaviour:
   keepSwimming: 0
   clickable: 1
   MIN_SPEED: 0.7
-  MAX_SPEED: 0.12
+  MAX_SPEED: 1.2
   maxFishInAquarium: 1
   fishID: stripefish
 --- !u!198 &198470127902176894

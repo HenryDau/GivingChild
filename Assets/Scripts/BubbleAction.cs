@@ -7,9 +7,10 @@ public class BubbleAction : MonoBehaviour {
 
 	public void Punish() {
 		int trashPicker = Random.Range(0, objectToSpawn.Count);
-		for (int i = -30; i < 20; i = i + 8) {
-			Vector3 position = new Vector3 (-200, i, 18);
-			Instantiate (objectToSpawn[trashPicker], position, Quaternion.identity);
+		for (float i = -GlobalVariables.height / 3; i < GlobalVariables.height / 3; i += GlobalVariables.height / 21) {
+			Vector3 position = new Vector3 (-GlobalVariables.width / 2, i, 0);
+			var trash = Instantiate (objectToSpawn[trashPicker], position, Quaternion.identity);
+			trash.transform.localScale *= GlobalVariables.SHRINK_FACTOR;
 
 		}
 			

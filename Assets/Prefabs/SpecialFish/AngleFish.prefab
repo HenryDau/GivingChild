@@ -88,7 +88,7 @@ MonoBehaviour:
   keepSwimming: 0
   clickable: 1
   MIN_SPEED: 0.6
-  MAX_SPEED: 0.12
+  MAX_SPEED: 1.2
   maxFishInAquarium: 1
   fishID: spotfish
 --- !u!198 &198620908517828002

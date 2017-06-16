@@ -87,8 +87,8 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   keepSwimming: 0
   clickable: 1
-  MIN_SPEED: 5
-  MAX_SPEED: 10
+  MIN_SPEED: 0.5
+  MAX_SPEED: 1
   maxFishInAquarium: 1
   fishID: pufferfish
 --- !u!198 &198370166316380880

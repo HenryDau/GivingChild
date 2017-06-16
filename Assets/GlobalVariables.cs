@@ -7,7 +7,7 @@ using System.IO;
 public static class GlobalVariables {
 
 	public static bool isPaused = false;
-	public static int difficulty = 0; // 0 for toddler, 1-3 for levels 1-3
+	public static int difficulty = 3; // 0 for toddler, 1-3 for levels 1-3
 	public static int trashToMiss = 10;
 	public static bool level_1_complete = false;
 	public static bool level_2_complete = false;

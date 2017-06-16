@@ -87,8 +87,8 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   keepSwimming: 0
   clickable: 1
-  MIN_SPEED: 13
-  MAX_SPEED: 15
+  MIN_SPEED: 1.3
+  MAX_SPEED: 1.5
   maxFishInAquarium: 3
   fishID: tetra
 --- !u!198 &198489414455162222

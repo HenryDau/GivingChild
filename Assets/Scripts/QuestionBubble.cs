@@ -23,8 +23,11 @@ public class QuestionBubble : MonoBehaviour {
 
 	// Use this for initialization
 	void Start () {
+
+		amplitude = GlobalVariables.height / 10f;
+
 		wasCorrect = false;
-		speed = Random.Range (-0.5f, -1.0f);
+		speed = Random.Range (-0.5f, -1.0f) * GlobalVariables.SHRINK_FACTOR;
 		if (transform.position.x < 0) {
 			speed = -speed;
 		}
@@ -54,7 +57,7 @@ public class QuestionBubble : MonoBehaviour {
 	void Update () {
 		if (!GlobalVariables.isPaused) {
 			position = transform.localPosition;
-			if (position.x < -200) {
+			if (position.x < -GlobalVariables.width / 2 || position.x > GlobalVariables.width / 2) {
 				Destroy (gameObject);
 			}
 

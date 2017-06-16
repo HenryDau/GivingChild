@@ -29,7 +29,7 @@ public class ClownfishSwim : MonoBehaviour {
 				transform.position.z
 			);
 
-			transform.Rotate (Vector3.down, (float)lifetime / 5 / 360);
+			//transform.Rotate (Vector3.down, (float)lifetime / 5 / 360);
 		}
 	}
 }

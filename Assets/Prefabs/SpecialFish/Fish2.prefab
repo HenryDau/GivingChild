@@ -87,8 +87,8 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   keepSwimming: 0
   clickable: 1
-  MIN_SPEED: 5
-  MAX_SPEED: 8
+  MIN_SPEED: 0.5
+  MAX_SPEED: 0.8
   maxFishInAquarium: 1
   fishID: angelfish
 --- !u!198 &198571359914979682

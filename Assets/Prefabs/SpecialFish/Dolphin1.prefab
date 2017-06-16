@@ -88,7 +88,7 @@ MonoBehaviour:
   keepSwimming: 0
   clickable: 1
   MIN_SPEED: 0.5
-  MAX_SPEED: 0.1
+  MAX_SPEED: 1
   maxFishInAquarium: 1
   fishID: dolphin
 --- !u!198 &198848648708409490

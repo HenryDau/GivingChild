@@ -69,8 +69,8 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   keepSwimming: 0
   clickable: 1
-  MIN_SPEED: 10
-  MAX_SPEED: 15
+  MIN_SPEED: 1
+  MAX_SPEED: 1.5
   maxFishInAquarium: 1
   fishID: manatee
 --- !u!198 &198635785758710038

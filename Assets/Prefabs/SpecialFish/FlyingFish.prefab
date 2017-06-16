@@ -87,8 +87,8 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   keepSwimming: 0
   clickable: 1
-  MIN_SPEED: 14
-  MAX_SPEED: 15
+  MIN_SPEED: 1.4
+  MAX_SPEED: 1.5
   maxFishInAquarium: 1
   fishID: flyingfish
 --- !u!198 &198732162024198150

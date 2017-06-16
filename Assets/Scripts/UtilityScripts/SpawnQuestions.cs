@@ -23,9 +23,9 @@ public class SpawnQuestions : MonoBehaviour {
 			if (counter % spawnChance == 0) {
 				Vector3 position;
 				if (Random.Range (0, 2) == 0) {
-					position = new Vector3 (200, Random.Range (minY, maxY), 18);
+					position = new Vector3 (GlobalVariables.width / 2, Random.Range (minY, maxY), 0);
 				} else {
-					position = new Vector3 (-200, Random.Range (minY, maxY), 18);
+					position = new Vector3 (-GlobalVariables.width / 2, Random.Range (minY, maxY), 0);
 				}
 
 				var bubble = Instantiate (objectToSpawn, position, Quaternion.identity);

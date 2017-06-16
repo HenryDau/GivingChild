@@ -10,7 +10,8 @@ public class ClownfishSpawner : MonoBehaviour {
 
 	// Use this for initialization
 	void Start () {
-		
+		minY = -transform.lossyScale.y / 2;
+		maxY = transform.lossyScale.y / 2;
 	}
 	
 	// Update is called once per frame
