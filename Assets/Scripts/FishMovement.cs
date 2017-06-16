@@ -31,14 +31,15 @@ public class FishMovement : MonoBehaviour {
 		if (pointReached()) {
 			selectNewPoint ();
 		}
-        Transform child = transform.GetChild(0);
-        transform.DetachChildren(); //detach children
+        //Transform child = transform.GetChild(0);
+        //transform.DetachChildren(); //detach children
         doRotation();
-        child.parent = transform; //reatach children
+        //child.parent = transform; //reatach children
     }
 
 	private void selectNewPoint()
 	{
+        
         Transform child = transform.GetChild(0);
         transform.DetachChildren(); //detach children
 
@@ -59,18 +60,18 @@ public class FishMovement : MonoBehaviour {
                 if (pointingRight == false)
                 {
                     startRotation();
-                    Debug.Log("Correction Implemented");
+                    //Debug.Log("Correction Implemented");
                     copyscale.y *= -1;
                     copyscale.x *= -1;
                 }
                 pointingRight = true;
-                Debug.Log("moving fast to the left");
+                //Debug.Log("moving fast to the left");
             }
             else
             {
                 if (pointingRight == true) startRotation();
                 pointingRight = false;
-                Debug.Log("moving fast to the right");
+                //Debug.Log("moving fast to the right");
             }
 			transform.localScale = copyscale;
             slow = false;
@@ -83,28 +84,32 @@ public class FishMovement : MonoBehaviour {
                 copyscale.x *= -1;
                 if (pointingRight == false) startRotation();
                 pointingRight = true;
-                Debug.Log("moving slow to the left");
+                //Debug.Log("moving slow to the left");
             }
             else
             {
                 if (pointingRight == true) startRotation();
                 pointingRight = false;
-                Debug.Log("moving slow to the right");
+                //Debug.Log("moving slow to the right");
             }
 			transform.localScale = copyscale;
             slow = true;
         }
 
         child.parent = transform; //reatach children
+        //child.localScale = Vector3.one;
+
     }
 	private bool pointReached(){
-		return (goalPoint - rb2d.position).magnitude < 1;
+        return (goalPoint - rb2d.position).magnitude < 1;
 	}
 
     private void startRotation()
     {
+        
         flipTime = Time.time;
         //transform.rotation = Quaternion.AngleAxis(180, new Vector3(0, 1, 0));
+        
     }
 
     private void doRotation()
@@ -112,8 +117,20 @@ public class FishMovement : MonoBehaviour {
         if (Time.time - flipTime < flipDuration)
         {
             float percent = (Time.time - flipTime) / flipDuration;
+            Transform child = transform.GetChild(0);
+            transform.DetachChildren(); //detach children
             transform.rotation = Quaternion.AngleAxis(180-percent*180, new Vector3(0, 1 , 0));
+            child.parent = transform; //reatach children
+            if (!pointingRight)
+            {
+                child.localScale = Vector3.one;
+            }
+            else
+            {
+                child.localScale = new Vector3(-1,1,1);
+            }
         }
+        
     }
 
 }

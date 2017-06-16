@@ -4082,6 +4082,7 @@ GameObject:
   - component: {fileID: 1373861286}
   - component: {fileID: 1373861287}
   - component: {fileID: 1373861285}
+  - component: {fileID: 1373861288}
   m_Layer: 0
   m_Name: shark
   m_TagString: Untagged
@@ -4438,6 +4439,18 @@ Animator:
   m_WarningMessage: 
   m_HasTransformHierarchy: 1
   m_AllowConstantClipSamplingOptimization: 1
+--- !u!114 &1373861288
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 1373861280}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 395f7d09f39778c4dbd7e253f68d39ca, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  textFix: 0
 --- !u!1 &1438774299
 GameObject:
   m_ObjectHideFlags: 0
@@ -4720,6 +4733,7 @@ GameObject:
   - component: {fileID: 1935251892}
   - component: {fileID: 1935251891}
   - component: {fileID: 1935251890}
+  - component: {fileID: 1935251894}
   m_Layer: 5
   m_Name: bubble
   m_TagString: Untagged
@@ -4809,6 +4823,18 @@ Transform:
   m_Father: {fileID: 0}
   m_RootOrder: 7
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!114 &1935251894
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 1935251889}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 395f7d09f39778c4dbd7e253f68d39ca, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  textFix: 0
 --- !u!1 &1936775653
 GameObject:
   m_ObjectHideFlags: 0
@@ -4820,6 +4846,7 @@ GameObject:
   - component: {fileID: 1936775657}
   - component: {fileID: 1936775656}
   - component: {fileID: 1936775655}
+  - component: {fileID: 1936775658}
   m_Layer: 0
   m_Name: arrow
   m_TagString: Untagged
@@ -4924,6 +4951,18 @@ SpriteRenderer:
   m_Size: {x: 8, y: 6}
   m_AdaptiveModeThreshold: 0.5
   m_SpriteTileMode: 0
+--- !u!114 &1936775658
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 1936775653}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 395f7d09f39778c4dbd7e253f68d39ca, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  textFix: 0
 --- !u!1 &1975393651
 GameObject:
   m_ObjectHideFlags: 0
@@ -4935,6 +4974,7 @@ GameObject:
   - component: {fileID: 1975393655}
   - component: {fileID: 1975393654}
   - component: {fileID: 1975393653}
+  - component: {fileID: 1975393656}
   m_Layer: 0
   m_Name: arrow (1)
   m_TagString: Untagged
@@ -5039,6 +5079,18 @@ SpriteRenderer:
   m_Size: {x: 8, y: 6}
   m_AdaptiveModeThreshold: 0.5
   m_SpriteTileMode: 0
+--- !u!114 &1975393656
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 1975393651}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 395f7d09f39778c4dbd7e253f68d39ca, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  textFix: 0
 --- !u!1 &2051511348
 GameObject:
   m_ObjectHideFlags: 0
@@ -5049,6 +5101,7 @@ GameObject:
   - component: {fileID: 2051511351}
   - component: {fileID: 2051511350}
   - component: {fileID: 2051511349}
+  - component: {fileID: 2051511352}
   m_Layer: 0
   m_Name: Title
   m_TagString: Untagged
@@ -5122,3 +5175,15 @@ Transform:
   m_Father: {fileID: 0}
   m_RootOrder: 8
   m_LocalEulerAnglesHint: {x: 0, y: -171.43501, z: 0}
+--- !u!114 &2051511352
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 2051511348}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 395f7d09f39778c4dbd7e253f68d39ca, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  textFix: 0
