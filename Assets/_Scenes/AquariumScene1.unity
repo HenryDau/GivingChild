@@ -118,6 +118,7 @@ GameObject:
   - component: {fileID: 71453923}
   - component: {fileID: 71453925}
   - component: {fileID: 71453924}
+  - component: {fileID: 71453926}
   m_Layer: 0
   m_Name: Name
   m_TagString: Untagged
@@ -191,6 +192,18 @@ MeshRenderer:
   m_SortingLayerID: 0
   m_SortingLayer: 0
   m_SortingOrder: 0
+--- !u!114 &71453926
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 71453922}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 395f7d09f39778c4dbd7e253f68d39ca, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  textFix: 0
 --- !u!1 &77694056
 GameObject:
   m_ObjectHideFlags: 0
@@ -201,6 +214,7 @@ GameObject:
   - component: {fileID: 77694059}
   - component: {fileID: 77694058}
   - component: {fileID: 77694057}
+  - component: {fileID: 77694060}
   m_Layer: 0
   m_Name: Title
   m_TagString: Untagged
@@ -274,6 +288,18 @@ Transform:
   m_Father: {fileID: 0}
   m_RootOrder: 11
   m_LocalEulerAnglesHint: {x: 0, y: -171.43501, z: 0}
+--- !u!114 &77694060
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 77694056}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 395f7d09f39778c4dbd7e253f68d39ca, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  textFix: 0
 --- !u!1 &119048301
 GameObject:
   m_ObjectHideFlags: 0
@@ -315,6 +341,7 @@ GameObject:
   - component: {fileID: 316928084}
   - component: {fileID: 316928083}
   - component: {fileID: 316928082}
+  - component: {fileID: 316928085}
   m_Layer: 0
   m_Name: arrow (1)
   m_TagString: Untagged
@@ -419,6 +446,18 @@ SpriteRenderer:
   m_Size: {x: 8, y: 6}
   m_AdaptiveModeThreshold: 0.5
   m_SpriteTileMode: 0
+--- !u!114 &316928085
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 316928080}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 395f7d09f39778c4dbd7e253f68d39ca, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  textFix: 0
 --- !u!1 &478479741
 GameObject:
   m_ObjectHideFlags: 0
@@ -516,6 +555,7 @@ GameObject:
   - component: {fileID: 622326203}
   - component: {fileID: 622326205}
   - component: {fileID: 622326204}
+  - component: {fileID: 622326206}
   m_Layer: 0
   m_Name: Purplefish
   m_TagString: Untagged
@@ -888,6 +928,18 @@ Animator:
   m_WarningMessage: 
   m_HasTransformHierarchy: 1
   m_AllowConstantClipSamplingOptimization: 1
+--- !u!114 &622326206
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 622326198}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 395f7d09f39778c4dbd7e253f68d39ca, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  textFix: 0
 --- !u!1 &651571446
 GameObject:
   m_ObjectHideFlags: 0
@@ -899,6 +951,7 @@ GameObject:
   - component: {fileID: 651571450}
   - component: {fileID: 651571449}
   - component: {fileID: 651571448}
+  - component: {fileID: 651571451}
   m_Layer: 0
   m_Name: arrow
   m_TagString: Untagged
@@ -1003,6 +1056,18 @@ SpriteRenderer:
   m_Size: {x: 8, y: 6}
   m_AdaptiveModeThreshold: 0.5
   m_SpriteTileMode: 0
+--- !u!114 &651571451
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 651571446}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 395f7d09f39778c4dbd7e253f68d39ca, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  textFix: 0
 --- !u!1 &729608409
 GameObject:
   m_ObjectHideFlags: 0
@@ -1014,6 +1079,7 @@ GameObject:
   - component: {fileID: 729608412}
   - component: {fileID: 729608411}
   - component: {fileID: 729608410}
+  - component: {fileID: 729608414}
   m_Layer: 5
   m_Name: bubble
   m_TagString: Untagged
@@ -1103,6 +1169,18 @@ Transform:
   m_Father: {fileID: 0}
   m_RootOrder: 10
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!114 &729608414
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 729608409}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 395f7d09f39778c4dbd7e253f68d39ca, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  textFix: 0
 --- !u!1 &754975161
 GameObject:
   m_ObjectHideFlags: 0
@@ -4773,6 +4851,7 @@ GameObject:
   - component: {fileID: 1346902395}
   - component: {fileID: 1346902396}
   - component: {fileID: 1346902394}
+  - component: {fileID: 1346902397}
   m_Layer: 0
   m_Name: Angelfish
   m_TagString: Untagged
@@ -5254,6 +5333,18 @@ Animator:
   m_WarningMessage: 
   m_HasTransformHierarchy: 1
   m_AllowConstantClipSamplingOptimization: 1
+--- !u!114 &1346902397
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 1346902389}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 395f7d09f39778c4dbd7e253f68d39ca, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  textFix: 0
 --- !u!1 &1373861280
 GameObject:
   m_ObjectHideFlags: 0
@@ -5267,6 +5358,7 @@ GameObject:
   - component: {fileID: 1373861281}
   - component: {fileID: 1373861286}
   - component: {fileID: 1373861285}
+  - component: {fileID: 1373861287}
   m_Layer: 0
   m_Name: Jellyfish
   m_TagString: Untagged
@@ -5674,6 +5766,18 @@ MonoBehaviour:
   fishID: jellyfish1
   fishName: Clyde
   fishOwned: 0
+--- !u!114 &1373861287
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 1373861280}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 395f7d09f39778c4dbd7e253f68d39ca, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  textFix: 1
 --- !u!1 &1438774299
 GameObject:
   m_ObjectHideFlags: 0
@@ -6109,6 +6213,7 @@ GameObject:
   - component: {fileID: 2098876738}
   - component: {fileID: 2098876737}
   - component: {fileID: 2098876736}
+  - component: {fileID: 2098876740}
   m_Layer: 5
   m_Name: Canvas
   m_TagString: Untagged
@@ -6234,6 +6339,18 @@ Canvas:
   m_SortingLayerID: 0
   m_SortingOrder: 0
   m_TargetDisplay: 0
+--- !u!114 &2098876740
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 2098876734}
+  m_Enabled: 0
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 395f7d09f39778c4dbd7e253f68d39ca, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  textFix: 0
 --- !u!1 &2102008616
 GameObject:
   m_ObjectHideFlags: 0
@@ -6248,6 +6365,7 @@ GameObject:
   - component: {fileID: 2102008622}
   - component: {fileID: 2102008623}
   - component: {fileID: 2102008621}
+  - component: {fileID: 2102008624}
   m_Layer: 0
   m_Name: Clownfish
   m_TagString: Untagged
@@ -6302,7 +6420,7 @@ Transform:
   m_PrefabInternal: {fileID: 0}
   m_GameObject: {fileID: 2102008616}
   m_LocalRotation: {x: 0, y: 1, z: 0, w: 0}
-  m_LocalPosition: {x: 5.73, y: 0.94, z: 0.5}
+  m_LocalPosition: {x: 4.35, y: 1.59, z: 0.5}
   m_LocalScale: {x: 0.25, y: 0.25, z: 0.25}
   m_Children:
   - {fileID: 808281517}
@@ -6596,6 +6714,18 @@ Animator:
   m_WarningMessage: 
   m_HasTransformHierarchy: 1
   m_AllowConstantClipSamplingOptimization: 1
+--- !u!114 &2102008624
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 2102008616}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 395f7d09f39778c4dbd7e253f68d39ca, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  textFix: 1
 --- !u!1 &2134946033
 GameObject:
   m_ObjectHideFlags: 0

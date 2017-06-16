@@ -201,6 +201,7 @@ GameObject:
   - component: {fileID: 327925886}
   - component: {fileID: 327925885}
   - component: {fileID: 327925884}
+  - component: {fileID: 327925887}
   m_Layer: 0
   m_Name: Title
   m_TagString: Untagged
@@ -274,6 +275,18 @@ Transform:
   m_Father: {fileID: 0}
   m_RootOrder: 9
   m_LocalEulerAnglesHint: {x: 0, y: -171.43501, z: 0}
+--- !u!114 &327925887
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 327925883}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 395f7d09f39778c4dbd7e253f68d39ca, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  textFix: 0
 --- !u!1 &550511807
 GameObject:
   m_ObjectHideFlags: 0
@@ -285,6 +298,7 @@ GameObject:
   - component: {fileID: 550511811}
   - component: {fileID: 550511810}
   - component: {fileID: 550511809}
+  - component: {fileID: 550511812}
   m_Layer: 0
   m_Name: arrow (1)
   m_TagString: Untagged
@@ -389,6 +403,18 @@ SpriteRenderer:
   m_Size: {x: 8, y: 6}
   m_AdaptiveModeThreshold: 0.5
   m_SpriteTileMode: 0
+--- !u!114 &550511812
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 550511807}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 395f7d09f39778c4dbd7e253f68d39ca, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  textFix: 0
 --- !u!1 &754975161
 GameObject:
   m_ObjectHideFlags: 0
@@ -4264,6 +4290,7 @@ GameObject:
   - component: {fileID: 1373861286}
   - component: {fileID: 1373861287}
   - component: {fileID: 1373861285}
+  - component: {fileID: 1373861288}
   m_Layer: 0
   m_Name: Dolphin1
   m_TagString: Untagged
@@ -4596,6 +4623,18 @@ Animator:
   m_WarningMessage: 
   m_HasTransformHierarchy: 1
   m_AllowConstantClipSamplingOptimization: 1
+--- !u!114 &1373861288
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 1373861280}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 395f7d09f39778c4dbd7e253f68d39ca, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  textFix: 0
 --- !u!1 &1438774299
 GameObject:
   m_ObjectHideFlags: 0
@@ -4777,6 +4816,7 @@ GameObject:
   - component: {fileID: 1455299925}
   - component: {fileID: 1455299924}
   - component: {fileID: 1455299923}
+  - component: {fileID: 1455299926}
   m_Layer: 0
   m_Name: arrow
   m_TagString: Untagged
@@ -4881,6 +4921,18 @@ SpriteRenderer:
   m_Size: {x: 8, y: 6}
   m_AdaptiveModeThreshold: 0.5
   m_SpriteTileMode: 0
+--- !u!114 &1455299926
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 1455299921}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 395f7d09f39778c4dbd7e253f68d39ca, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  textFix: 0
 --- !u!1 &1556691408
 GameObject:
   m_ObjectHideFlags: 0
@@ -4954,6 +5006,7 @@ GameObject:
   - component: {fileID: 1600803914}
   - component: {fileID: 1600803913}
   - component: {fileID: 1600803912}
+  - component: {fileID: 1600803916}
   m_Layer: 5
   m_Name: bubble
   m_TagString: Untagged
@@ -5043,6 +5096,18 @@ Transform:
   m_Father: {fileID: 0}
   m_RootOrder: 8
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!114 &1600803916
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 1600803911}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 395f7d09f39778c4dbd7e253f68d39ca, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  textFix: 0
 --- !u!1 &1899133727
 GameObject:
   m_ObjectHideFlags: 0
@@ -5195,6 +5260,7 @@ GameObject:
   - component: {fileID: 2102008622}
   - component: {fileID: 2102008623}
   - component: {fileID: 2102008621}
+  - component: {fileID: 2102008624}
   m_Layer: 0
   m_Name: Dolphin2
   m_TagString: Untagged
@@ -5494,3 +5560,15 @@ Animator:
   m_WarningMessage: 
   m_HasTransformHierarchy: 1
   m_AllowConstantClipSamplingOptimization: 1
+--- !u!114 &2102008624
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 2102008616}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 395f7d09f39778c4dbd7e253f68d39ca, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  textFix: 0
