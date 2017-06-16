@@ -29,6 +29,9 @@ public class PointCounter : MonoBehaviour {
 
 		if (point >= 50) {
 			showWinMenu = true;
+			GlobalVariables.completeLevel ();
+			GlobalVariables.Save ();
+			GlobalVariables.difficulty = 0;
 		}
 		if (GlobalVariables.difficulty == 1 && trashMissed >= GlobalVariables.trashToMiss) {
 			showLoseMenu = true;
