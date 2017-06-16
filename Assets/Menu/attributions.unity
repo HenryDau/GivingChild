@@ -934,10 +934,10 @@ MonoBehaviour:
       Version=1.0.0.0, Culture=neutral, PublicKeyToken=null
   m_FontData:
     m_Font: {fileID: 12800000, guid: 1983580c0ca57e246bd6d23197e9f0cf, type: 3}
-    m_FontSize: 21
+    m_FontSize: 19
     m_FontStyle: 0
     m_BestFit: 0
-    m_MinSize: 10
+    m_MinSize: 0
     m_MaxSize: 40
     m_Alignment: 1
     m_AlignByGeometry: 0
@@ -945,9 +945,10 @@ MonoBehaviour:
     m_HorizontalOverflow: 0
     m_VerticalOverflow: 0
     m_LineSpacing: 1
-  m_Text: "Attributions\n\nMusic provided by\nKevin MacLeod -- incompetech.com\nCreative
-    Commons: Attribution 3.0\n\n\nImages provided by \npixabay.com & clipartall.com\n\nFont
-    provided by\nEzeqviel Ergo -- behance.net/eergohiki"
+  m_Text: "Attributions\n\nMusic provided by\nKevin MacLeod -- incompetech.com\n\nImages
+    provided by \npixabay.com & clipartall.com\n\nFont provided by\nEzeqviel Ergo
+    -- behance.net/eergohiki\n\nSound Effects courtesy of FreeSounds.org\n\nAll Assets
+    used under Creative Commons Attribution 3.0 License"
 --- !u!222 &1671822577
 CanvasRenderer:
   m_ObjectHideFlags: 0
