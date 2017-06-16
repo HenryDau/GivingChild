@@ -22,7 +22,7 @@ EditorBuildSettings:
     guid: 8347c0553bd5dea44a6aa46be47cff1f
   - enabled: 1
     path: Assets/Menu/bubble_levels.unity
-    guid: 00000000000000000000000000000000
+    guid: 224ce69daa2ae524cb45014e50a3e811
   - enabled: 1
     path: Assets/_Scenes/AquariumScene1.unity
     guid: e948195eddaca44d8b0edddf3aa10b96
@@ -41,3 +41,6 @@ EditorBuildSettings:
   - enabled: 1
     path: Assets/_Scenes/AquariumScene6.unity
     guid: 3e21e485cd55a3048be219e50863a69a
+  - enabled: 1
+    path: Assets/Menu/instructions.unity
+    guid: b0c1f5f3b16d5fd4ba7324165c997910
