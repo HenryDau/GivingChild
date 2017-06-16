@@ -12,7 +12,8 @@ public class SpawnQuestions : MonoBehaviour {
 
 	// Use this for initialization
 	void Start () {
-		
+		maxY = GlobalVariables.height / 2;
+		minY = -GlobalVariables.height / 2;
 	}
 	
 	// Update is called once per frame
@@ -27,7 +28,8 @@ public class SpawnQuestions : MonoBehaviour {
 					position = new Vector3 (-200, Random.Range (minY, maxY), 18);
 				}
 
-				Instantiate (objectToSpawn, position, Quaternion.identity);
+				var bubble = Instantiate (objectToSpawn, position, Quaternion.identity);
+				bubble.transform.localScale *= GlobalVariables.SHRINK_FACTOR;
 			}
 		}
 	}

@@ -5,8 +5,8 @@ using UnityEngine;
 
 public class GarbageFloatPoof : MonoBehaviour {
     public GameObject dustParticle; // the prefab for which to spawn
-    public int X_BOUND = 175;
-	public int Y_BOUND = 75;
+	public float X_BOUND = GlobalVariables.width / 2f;
+	public float Y_BOUND = GlobalVariables.height / 2f;
 	public float MAX_SPEED = 1.5f;
 
 	private int timeAlive = 0;
@@ -16,7 +16,7 @@ public class GarbageFloatPoof : MonoBehaviour {
     // Use this for initialization
     void Start () {
 		int value = UnityEngine.Random.Range (0, 100);
-		int speed = UnityEngine.Random.Range (5, 13);
+		float speed = UnityEngine.Random.Range (5, 13) * GlobalVariables.SHRINK_FACTOR;
 		rb = GetComponent<Rigidbody2D> ();
 		if (value < 50) {
 			rb.velocity = new Vector2 (-(float)speed / 10, 0);
@@ -29,6 +29,9 @@ public class GarbageFloatPoof : MonoBehaviour {
 		} else {
 			rb.velocity = new Vector2 ((float)speed / 10, 0);
 		}
+
+		X_BOUND = GlobalVariables.width / 2f;
+		Y_BOUND = GlobalVariables.height / 2f;
     }
 
 	void OnMouseDown(){
@@ -47,9 +50,9 @@ public class GarbageFloatPoof : MonoBehaviour {
         
 
 			//Finds Points and increments public variable
-			GameObject PointCounter = GameObject.Find ("Points");
+			/*GameObject PointCounter = GameObject.Find ("Points");
 			PointCounter Points = PointCounter.GetComponent<PointCounter> ();
-			Points.point += 1;
+			Points.point += 1;*/
 
 			Destroy (gameObject);
 
@@ -77,12 +80,12 @@ public class GarbageFloatPoof : MonoBehaviour {
 			// Turn around if at the end of the map
 			if ((rb.velocity.x > 0 && pos.x > X_BOUND) || (rb.velocity.x < 0 && pos.x < -X_BOUND)) {
 
-				if (timeAlive > 60) {
+				/*if (timeAlive > 60) {
 					//Finds Points and increments public variable
 					GameObject PointCounter = GameObject.Find ("Points");
 					PointCounter Points = PointCounter.GetComponent<PointCounter> ();
 					Points.trashMissed += 1;
-				}
+				}*/
 
 				Destroy (gameObject);
 				//rb.velocity = new Vector3( rb.velocity.x * -1, rb.velocity.y, rb.velocity.z);

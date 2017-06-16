@@ -12,8 +12,23 @@ public static class GlobalVariables {
 	public static bool level_1_complete = false;
 	public static bool level_2_complete = false;
 
+	private static Camera cam;
+	public static float height;
+	public static float width;
+	public static float SHRINK_FACTOR = .05f;
+
+
 	static void Start() {
 		Load ();
+		LoadCamera ();
+	}
+
+	public static void LoadCamera(){
+		cam = Camera.main;
+		height = 2f * cam.orthographicSize;
+		width = height * cam.aspect;
+
+		Debug.Log (height + " : " + width);
 	}
 
 	public static void pause() {

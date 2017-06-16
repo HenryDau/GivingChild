@@ -6,17 +6,22 @@ using System.IO;
 
 public class Swim : MonoBehaviour {
 
-	private int speed;
+	private float speed;
 	public bool keepSwimming = true;
 	public bool clickable = false;
-	public int MIN_SPEED = 5;
-	public int MAX_SPEED = 15;
+	public float MIN_SPEED = .5f;
+	public float MAX_SPEED = .15f;
     public int maxFishInAquarium = 1;
     public string fishID;
+	private float X_BOUND;
+	private float Y_BOUND;
 
 	// Use this for initialization
 	void Start () {
 		speed = Random.Range (MIN_SPEED, MAX_SPEED);
+
+		X_BOUND = GlobalVariables.width / 2f;
+		Y_BOUND = GlobalVariables.height / 2f;
 	}
 	
 	// Update is called once per frame
@@ -25,11 +30,11 @@ public class Swim : MonoBehaviour {
 		if (!GlobalVariables.isPaused) {
 			
 			Vector3 pos = transform.localPosition;
-			if ((speed > 0 && pos.x > 175) || (speed < 0 && pos.x < -175)) {
+			if ((speed > 0 && pos.x > X_BOUND) || (speed < 0 && pos.x < -X_BOUND)) {
 				if (keepSwimming) {
 					speed *= -1;
 					transform.Rotate (Vector3.up, 180);
-					pos.y = (float)(.5 - Random.value) * 140;
+					pos.y = (float)(.5 - Random.value) * Y_BOUND;
 				} else {
 					Destroy (gameObject);
 				}
