@@ -15,10 +15,10 @@ public class fishHP : MonoBehaviour {
 	private int hit_timer = 10;
 
 
-	public int min_X;
-	public int max_X;
-	public int min_Y;
-	public int max_Y;
+	public float min_X;
+	public float max_X;
+	public float min_Y;
+	public float max_Y;
 	public float min_speed;
 	public float max_speed;
 
@@ -28,6 +28,13 @@ public class fishHP : MonoBehaviour {
 	void Start() {
 		curr_HP = max_HP;
 		sr = GetComponent<SpriteRenderer> ();
+
+		min_X = -GlobalVariables.width / 2;
+		max_X = GlobalVariables.width / 2;
+		min_Y = -GlobalVariables.height / 2;
+		max_Y = GlobalVariables.height / 2;
+
+
 		selectNewPoint ();
 	}
 

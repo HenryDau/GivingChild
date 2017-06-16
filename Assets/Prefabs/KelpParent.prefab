@@ -115,8 +115,8 @@ MonoBehaviour:
   MIN_Y: -75
   MAX_X: 150
   MAX_Y: -30
-  MIN_Z: 50
-  MAX_Z: 60
+  MIN_Z: -8
+  MAX_Z: -1
   randomizeRotation: 0
   growOnPoint: 1
   growOnMiss: 0

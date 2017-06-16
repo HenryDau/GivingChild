@@ -318,8 +318,8 @@ MonoBehaviour:
   max_X: 150
   min_Y: -50
   max_Y: 50
-  min_speed: 5
-  max_speed: 20
+  min_speed: 0.5
+  max_speed: 2
 --- !u!114 &114869657467435812
 MonoBehaviour:
   m_ObjectHideFlags: 1

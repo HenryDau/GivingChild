@@ -19,13 +19,14 @@ public class PointCounter : MonoBehaviour {
 	private string loseText = "You missed too many pieces of trash and could not protect the reef!";
     void Start(){
 		//pointText.text = "Trash Missed: " + trashMissed.ToString () + "\nPoints: " + point.ToString();
-		pointText.text = "Points: " + point.ToString();
+		//pointText.text = "Points: " + point.ToString();
+		pointText.text = "";
     }
 
     private void Update()
     {
 		//pointText.text = "Trash Missed: " + trashMissed.ToString () + "\nPoints: " + point.ToString();
-		pointText.text = "Points: " + point.ToString();
+		//pointText.text = "Points: " + point.ToString();
 
 		if (point >= 50) {
 			showWinMenu = true;

@@ -50,9 +50,9 @@ public class GarbageFloatPoof : MonoBehaviour {
         
 
 			//Finds Points and increments public variable
-			/*GameObject PointCounter = GameObject.Find ("Points");
+			GameObject PointCounter = GameObject.Find ("Points");
 			PointCounter Points = PointCounter.GetComponent<PointCounter> ();
-			Points.point += 1;*/
+			Points.point += 1;
 
 			Destroy (gameObject);
 
@@ -80,12 +80,12 @@ public class GarbageFloatPoof : MonoBehaviour {
 			// Turn around if at the end of the map
 			if ((rb.velocity.x > 0 && pos.x > X_BOUND) || (rb.velocity.x < 0 && pos.x < -X_BOUND)) {
 
-				/*if (timeAlive > 60) {
+				if (timeAlive > 60) {
 					//Finds Points and increments public variable
 					GameObject PointCounter = GameObject.Find ("Points");
 					PointCounter Points = PointCounter.GetComponent<PointCounter> ();
 					Points.trashMissed += 1;
-				}*/
+				}
 
 				Destroy (gameObject);
 				//rb.velocity = new Vector3( rb.velocity.x * -1, rb.velocity.y, rb.velocity.z);
