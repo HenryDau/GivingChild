@@ -1,0 +1,64 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!1001 &100100000
+Prefab:
+  m_ObjectHideFlags: 1
+  serializedVersion: 2
+  m_Modification:
+    m_TransformParent: {fileID: 0}
+    m_Modifications: []
+    m_RemovedComponents: []
+  m_ParentPrefab: {fileID: 0}
+  m_RootGameObject: {fileID: 1678766818956232}
+  m_IsPrefabParent: 1
+--- !u!1 &1678766818956232
+GameObject:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 100100000}
+  serializedVersion: 5
+  m_Component:
+  - component: {fileID: 4896588655580960}
+  - component: {fileID: 114823799191498588}
+  m_Layer: 0
+  m_Name: TrashSpawner
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!4 &4896588655580960
+Transform:
+  m_ObjectHideFlags: 1
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 100100000}
+  m_GameObject: {fileID: 1678766818956232}
+  m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
+  m_LocalPosition: {x: 24.12318, y: -2.239904, z: 0}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_Children: []
+  m_Father: {fileID: 0}
+  m_RootOrder: 0
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!114 &114823799191498588
+MonoBehaviour:
+  m_ObjectHideFlags: 1
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 100100000}
+  m_GameObject: {fileID: 1678766818956232}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 3a33af3a370ba42d9978ad275540f492, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  objectToSpawn:
+  - {fileID: 1232215142907660, guid: 58e29149e092b4e4db0eaf9e79901304, type: 2}
+  - {fileID: 1009223924998866, guid: 939c1f70a4a334f3a835650af547a659, type: 2}
+  - {fileID: 1269231622607092, guid: 87c47502c0b384ed59b5dadc94a2c472, type: 2}
+  - {fileID: 1445876607640786, guid: af14203c301e04a4ebe92e18aaa6354f, type: 2}
+  - {fileID: 1082473457248262, guid: f1a6cdd9a5d4e451999f16ac2e7b6db8, type: 2}
+  - {fileID: 1059375620875888, guid: 481775c74663649b591c556669c408cf, type: 2}
+  - {fileID: 1201345078675562, guid: 16f127f004e514a79a5de40917bc52b0, type: 2}
+  maxY: 50
+  minY: -50
+  spawnChance: 90

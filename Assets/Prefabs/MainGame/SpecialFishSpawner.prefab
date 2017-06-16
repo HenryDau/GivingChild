@@ -1,0 +1,75 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!1001 &100100000
+Prefab:
+  m_ObjectHideFlags: 1
+  serializedVersion: 2
+  m_Modification:
+    m_TransformParent: {fileID: 0}
+    m_Modifications: []
+    m_RemovedComponents: []
+  m_ParentPrefab: {fileID: 0}
+  m_RootGameObject: {fileID: 1805719057978854}
+  m_IsPrefabParent: 1
+--- !u!1 &1805719057978854
+GameObject:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 100100000}
+  serializedVersion: 5
+  m_Component:
+  - component: {fileID: 4702225798941552}
+  - component: {fileID: 114205231027859362}
+  m_Layer: 0
+  m_Name: SpecialFishSpawner
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!4 &4702225798941552
+Transform:
+  m_ObjectHideFlags: 1
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 100100000}
+  m_GameObject: {fileID: 1805719057978854}
+  m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
+  m_LocalPosition: {x: 0, y: 0, z: 0}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_Children: []
+  m_Father: {fileID: 0}
+  m_RootOrder: 0
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!114 &114205231027859362
+MonoBehaviour:
+  m_ObjectHideFlags: 1
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 100100000}
+  m_GameObject: {fileID: 1805719057978854}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: eb5f3bc6e186543889c76a378469b62f, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  commonFish:
+  - {fileID: 1997250491208038, guid: cd2de66d0725f4860820f9349fef0dac, type: 2}
+  - {fileID: 1914393508512158, guid: b59ad914da9984444ad454edd9cdca8b, type: 2}
+  - {fileID: 1858120602268606, guid: ec11e9ee07ea8420388867f06be721bb, type: 2}
+  - {fileID: 1360235730459450, guid: e754543f5dc8947249b0ea7a76a78112, type: 2}
+  - {fileID: 1769460459610514, guid: 53940c34335de4f7bb8f1201372ed8b0, type: 2}
+  rareFish:
+  - {fileID: 1094187866252672, guid: dc327df3b16904c69a85ee3049b947cb, type: 2}
+  - {fileID: 1710836806731600, guid: 5473d18a45eb74f898b4aea07fec184c, type: 2}
+  - {fileID: 1079296175597834, guid: 2ee0728cda3c6415891df4ff859a9c4c, type: 2}
+  - {fileID: 1178682214148252, guid: 507c8db3b100a49e694aa57e61fcb712, type: 2}
+  epicFish:
+  - {fileID: 1449552207346232, guid: 50e0a5a559ef64730bbf0ba2ea3be824, type: 2}
+  - {fileID: 1224217064644038, guid: b33f778721935499388191e20638c72f, type: 2}
+  - {fileID: 1175709099747006, guid: 506192cc75c124fbc82242a9fef95347, type: 2}
+  legendaryFish:
+  - {fileID: 1084795024261864, guid: 0354662dbeeb44c53a613281a44d87b0, type: 2}
+  - {fileID: 1852132233215394, guid: 19f846aa339544c65a2425eccbd18917, type: 2}
+  - {fileID: 1752388795461022, guid: 349de3f54e6544add8b43f611adfb359, type: 2}
+  maxY: 50
+  minY: -50
+  spawnChance: 600

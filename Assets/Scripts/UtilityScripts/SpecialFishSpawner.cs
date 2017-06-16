@@ -22,7 +22,8 @@ public class SpecialFishSpawner : MonoBehaviour {
 
 	// Use this for initialization
 	void Start () {
-		
+		minY = -GlobalVariables.height / 2;
+		maxY = GlobalVariables.height / 2;
 	}
 	
 	// Update is called once per frame
@@ -34,7 +35,7 @@ public class SpecialFishSpawner : MonoBehaviour {
 			if (counter % spawnChance == 0) {
 				//if (random < (spawnChance) * Time.deltaTime) {
 				//Vector3 position = new Vector3 (transform.position.x, Random.Range (minY, maxY), 18);
-				Vector3 position = new Vector3 (-200, Random.Range (minY, maxY), 28);
+				Vector3 position = new Vector3 (-GlobalVariables.width / 2, Random.Range (minY, maxY), 0);
 
 				int i = Random.Range (0, 1000);
 				GameObject fish;
@@ -56,7 +57,8 @@ public class SpecialFishSpawner : MonoBehaviour {
 					fish = legendaryFish[Random.Range(0, legendaryFish.Count)];
 				}
 
-				Instantiate (fish, position, Quaternion.identity);
+				var newFish = Instantiate (fish, position, Quaternion.identity);
+				newFish.transform.localScale *= GlobalVariables.SHRINK_FACTOR;
 			}
 		}
 	}
