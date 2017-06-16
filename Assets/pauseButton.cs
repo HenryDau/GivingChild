@@ -6,13 +6,11 @@ public class pauseButton : MonoBehaviour {
 	private bool showPauseMenu = false;
 	public GUISkin skin;
 
-	void OnMouseDown() {
+
+	public void pause() {
+		GlobalVariables.isPaused = true;
+		Time.timeScale = 0;
 		showPauseMenu = true;
-		if (GlobalVariables.isPaused == true) {
-			GlobalVariables.isPaused = false;
-		} else if (GlobalVariables.isPaused == false) {
-			GlobalVariables.isPaused = true;
-		}
 	}
 
 	void OnGUI() {
@@ -23,17 +21,15 @@ public class pauseButton : MonoBehaviour {
 	}
 
 	void ShowMenu(int windowID) {
-		
 		if (GUI.Button (new Rect (20, (Screen.height / 4), (Screen.width / 2) - 30, (Screen.height / 2) - 20), "Quit")) {
 			GlobalVariables.isPaused = false;
+			Time.timeScale = 1;
 			LoadLevels.loadMenu ("bubble_menu");
-
 			}
 		if (GUI.Button (new Rect ((Screen.width / 2), (Screen.height / 4), (Screen.width / 2) - 20, (Screen.height / 2) - 20), "Resume")) {
-				
 			GlobalVariables.isPaused = false;
+			Time.timeScale = 1;
 			showPauseMenu = false;
-				
 			}
 		
 	}
