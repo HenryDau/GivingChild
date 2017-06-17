@@ -26,6 +26,7 @@ public class pauseButton : MonoBehaviour {
 		
 		if (GUI.Button (new Rect (20, (Screen.height / 4), (Screen.width / 2) - 30, (Screen.height / 2) - 20), "Quit")) {
 			GlobalVariables.isPaused = false;
+			GlobalVariables.resetDifficulty ();
 			LoadLevels.loadMenu ("bubble_menu");
 
 			}

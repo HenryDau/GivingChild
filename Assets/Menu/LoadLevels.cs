@@ -38,5 +38,12 @@ public class LoadLevels : MonoBehaviour {
 
 	public void setDifficulty(int level) {
 		GlobalVariables.difficulty = level;
+		if (level == 1) {
+			GlobalVariables.trashToCollect = 100;
+		} else if (level == 2) {
+			GlobalVariables.trashToCollect = 500;
+		} else if (level == 3) {
+			GlobalVariables.trashToCollect = 1000;
+		}
 	}
 }
