@@ -36,7 +36,7 @@ public class GrowObject : MonoBehaviour {
 			MIN_X = -GlobalVariables.width / 2;
 			MAX_Y = -GlobalVariables.height / 3;
 			MAX_X = GlobalVariables.width / 2;
-			MIN_Y = -GlobalVariables.height / 2 + GlobalVariables.height / 5;
+			MIN_Y = -GlobalVariables.height / 2;
 
 		} else {
 			MIN_X = -GlobalVariables.width / 2;

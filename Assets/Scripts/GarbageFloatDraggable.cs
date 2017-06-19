@@ -14,6 +14,7 @@ public class GarbageFloatDraggable : MonoBehaviour {
 	private Vector3 screenPoint;
 	private Vector3 offset;
 	private Vector3 oldPosition;
+	private Vector3 secondOldPosition;
 
 
 	// Use this for initialization
@@ -31,6 +32,8 @@ public class GarbageFloatDraggable : MonoBehaviour {
 			Y_BOUND,
 			0
 		);
+
+		oldPosition = transform.position;
 
 		X_BOUND = GlobalVariables.width / 2f;
 		Y_BOUND = GlobalVariables.height / 2f;
@@ -53,6 +56,8 @@ public class GarbageFloatDraggable : MonoBehaviour {
 		
 		if (!GlobalVariables.isPaused) {
 
+			secondOldPosition = oldPosition;
+
 			oldPosition = transform.position;
 
 			Vector3 curScreenPoint = new Vector3 (Input.mousePosition.x, Input.mousePosition.y, screenPoint.z);
@@ -69,7 +74,7 @@ public class GarbageFloatDraggable : MonoBehaviour {
 			pressed = false;
 			released = true;
 
-			rb.velocity = (transform.position - oldPosition) * Time.deltaTime * 5;
+			rb.velocity = (transform.position - secondOldPosition) * Time.deltaTime * 5;
 		}
 	}
 	
