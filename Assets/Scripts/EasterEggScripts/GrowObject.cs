@@ -52,13 +52,13 @@ public class GrowObject : MonoBehaviour {
 
 		// Come up with position variables
 		float newY = Random.Range (MIN_Y, MAX_Y);
-		float newZ = (float)MAX_Z - (float)newY / (float)MIN_Y * ((float)MAX_Z - (float)MIN_Z);
+		float newZ = (float)MAX_Z - (float)newY / (float)MIN_Y * ((float)MAX_Z - (float)MIN_Z)+10;
 
 		if (changeSizeDynamically) {
 			
 			transform.position = new Vector3 (Random.Range(MIN_X, MAX_X), newY, newZ);
 			size = (float)Random.Range (MIN_SIZE, MAX_SIZE) * 
-				(((float)MAX_Z - (float)transform.position.z) / ((float)MAX_Z - (float)MIN_Z));
+				(((float)MAX_Z - (float)transform.position.z) / ((float)MAX_Z - (float)MIN_Z))+18;
 		
 		} else {
 			
@@ -92,6 +92,7 @@ public class GrowObject : MonoBehaviour {
 			lastMissed = points.trashMissed;
 			grow ();
 		}
+
 	}
 
 	void grow(){
