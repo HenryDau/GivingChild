@@ -53,7 +53,7 @@ public class TroutControl : MonoBehaviour {
 			if (fish1.GetComponent<fishHP> ().isDead && fish2.GetComponent<fishHP> ().isDead && fish3.GetComponent<fishHP> ().isDead) {
 				//print ("Fish are dead");
 				showLoseMenu = true;
-				GlobalVariables.resetDifficulty ();
+				//GlobalVariables.resetDifficulty ();
 			}
 		}
 
