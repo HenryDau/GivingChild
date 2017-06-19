@@ -50,6 +50,7 @@
      <Compile Include="Assets\BubblePop.cs" />
      <Compile Include="Assets\DustDestroy.cs" />
      <Compile Include="Assets\GlobalVariables.cs" />
+     <Compile Include="Assets\LevelControl.cs" />
      <Compile Include="Assets\Menu\BubbleGet.cs" />
      <Compile Include="Assets\Menu\LoadLevels.cs" />
      <Compile Include="Assets\MusicScript.cs" />
