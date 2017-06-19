@@ -58,7 +58,7 @@ public class GrowObject : MonoBehaviour {
 			
 			transform.position = new Vector3 (Random.Range(MIN_X, MAX_X), newY, newZ);
 			size = (float)Random.Range (MIN_SIZE, MAX_SIZE) * 
-				(((float)MAX_Z - (float)transform.position.z) / ((float)MAX_Z - (float)MIN_Z))+18;
+				(((float)MAX_Z - (float)transform.position.z) / ((float)MAX_Z - (float)MIN_Z))+21;
 		
 		} else {
 			
