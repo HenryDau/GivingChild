@@ -16,7 +16,7 @@ public class ClownfishSpawner : MonoBehaviour {
 	
 	// Update is called once per frame
 	void Update () {
-		
+
 	}
 
 	void OnMouseDown(){
@@ -29,5 +29,6 @@ public class ClownfishSpawner : MonoBehaviour {
 			var fish = Instantiate (objectToSpawn, position, Quaternion.identity);
             fish.transform.parent = gameObject.transform;
 		}
+
 	}
 }

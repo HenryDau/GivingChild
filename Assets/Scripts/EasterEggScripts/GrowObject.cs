@@ -36,7 +36,7 @@ public class GrowObject : MonoBehaviour {
 			MIN_X = -GlobalVariables.width / 2;
 			MAX_X = GlobalVariables.width / 2;
 			MIN_Y = -GlobalVariables.height / 2;
-			MAX_Y = -GlobalVariables.height / 3;
+			MAX_Y = -GlobalVariables.height / 5;
 
 		} else {
 			MIN_X = -GlobalVariables.width / 2;
@@ -56,11 +56,9 @@ public class GrowObject : MonoBehaviour {
 
 		if (changeSizeDynamically) {
 			
-			transform.position = new Vector3 (Random.Range(MIN_X, MAX_X), newY, newZ);
+			transform.position = new Vector3 (Random.Range(MIN_X, MAX_X), newY, newZ + 20);
 			size = (float)Random.Range (MIN_SIZE, MAX_SIZE) * 
-				(((float)MAX_Z - (float)transform.position.z) / ((float)MAX_Z - (float)MIN_Z));
-
-
+				(((float)MAX_Z - (float)newZ) / ((float)MAX_Z - (float)MIN_Z));
 		
 		} else {
 			
