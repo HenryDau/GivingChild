@@ -74,7 +74,7 @@ public class GarbageFloatDraggable : MonoBehaviour {
 			pressed = false;
 			released = true;
 
-			rb.velocity = (transform.position - secondOldPosition) * Time.deltaTime * 5;
+			rb.velocity = (transform.position - secondOldPosition) * Time.deltaTime * 3;
 		}
 	}
 	

@@ -6,8 +6,8 @@ public class GrowObject : MonoBehaviour {
 
 	public GameObject objectToSpawn; // the prefab for which to spawn
 
-	public float MAX_SIZE = 15f;
-	public float MIN_SIZE = 20f;
+	public float MAX_SIZE = 22f;
+	public float MIN_SIZE = 13f;
 	public float GROWTH_RATE = 1f;
 
 	public float MIN_X = -150;
@@ -34,9 +34,9 @@ public class GrowObject : MonoBehaviour {
 
 		if (growOnPoint) {
 			MIN_X = -GlobalVariables.width / 2;
-			MAX_Y = -GlobalVariables.height / 3;
 			MAX_X = GlobalVariables.width / 2;
 			MIN_Y = -GlobalVariables.height / 2;
+			MAX_Y = -GlobalVariables.height / 3;
 
 		} else {
 			MIN_X = -GlobalVariables.width / 2;
@@ -52,13 +52,15 @@ public class GrowObject : MonoBehaviour {
 
 		// Come up with position variables
 		float newY = Random.Range (MIN_Y, MAX_Y);
-		float newZ = (float)MAX_Z - (float)newY / (float)MIN_Y * ((float)MAX_Z - (float)MIN_Z)+10;
+		float newZ = (float)MAX_Z - (float)newY / (float)MIN_Y * ((float)MAX_Z - (float)MIN_Z);
 
 		if (changeSizeDynamically) {
 			
 			transform.position = new Vector3 (Random.Range(MIN_X, MAX_X), newY, newZ);
 			size = (float)Random.Range (MIN_SIZE, MAX_SIZE) * 
-				(((float)MAX_Z - (float)transform.position.z) / ((float)MAX_Z - (float)MIN_Z))+21;
+				(((float)MAX_Z - (float)transform.position.z) / ((float)MAX_Z - (float)MIN_Z));
+
+
 		
 		} else {
 			
@@ -92,7 +94,6 @@ public class GrowObject : MonoBehaviour {
 			lastMissed = points.trashMissed;
 			grow ();
 		}
-
 	}
 
 	void grow(){
