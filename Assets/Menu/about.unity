@@ -990,7 +990,7 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0.5, y: 0.5}
   m_AnchorMax: {x: 0.5, y: 0.5}
-  m_AnchoredPosition: {x: 1, y: 40}
+  m_AnchoredPosition: {x: 1, y: 27}
   m_SizeDelta: {x: 798, y: 324}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &1671822576
@@ -1025,21 +1025,24 @@ MonoBehaviour:
     m_HorizontalOverflow: 0
     m_VerticalOverflow: 0
     m_LineSpacing: 1
-  m_Text: "The Giving Child\r\n\n\r\nLorem ipsum dolor sit amet, consectetur adipiscing
-    elit. The righteous, not even the porch of the gate, and hung up. Till football
-    element worth it. Present the biggest soccer developers. Integer sapien fears.
-    Phasellus eleifend, and at all times, for the pull, the pain of which he ornare
-    risus, ac turpis accumsan tellus nisi. Maecenas molestie, sapien non mattis convallis
-    amet, consectetur quam malesuada-free, the life of Vivamus dolor arcu sit amet
-    enim. Mauris venenatis congue fringilla tortor. Largest casino free football and
-    nulla.\r\n\r\nNow do not always start. He was set to be largest. Maecenas faucibus
-    elit purus, in tincidunt lacinia out of life. For I also store Owner, rutrum sapien
-    in, euismod orci. Of life, nor is the chief and lacinia Duis vel arcu vel. Quisque
-    consectetur et orci ut the ends of the. Performance so that developer. Curabitur
-    laoreet sem lectus, placerat nulla, and condimentum sit amet. The element or a
-    lion, antioxidants diameter no skirt ugly. Maecenas nunc orci, fringilla nec ultrices
-    eget, hendrerit eu tortor. Fusce vitae nisl erat. Aenean vulputate aliquet eget
-    lorem."
+  m_Text: "The Giving Child\r\n\n\r\nDID YOU KNOW: Humans need the ocean in order
+    to survive! About 50% of our oxygen comes from plankton and seaweed.\r\n\r\nALERT!
+    ALERT! Currently, we are damaging the ocean at an alarming rate and you need to
+    do something about it right away.\r\n\r\nGOOD NEWS: You can make a difference!!!
+    No matter how old, boy or girl you can make an impact. Even babies can make a
+    difference by the type of toys they play with and diapers they use!\r\n\r\nHOW
+    TO MAKE A DIFFERENCE: playing this game will let you know the daily changes you
+    can do to take care of your oceans! 90% of profits from this game purchase will
+    go directly to the best nonprofits we can find that are making an incredible impact
+    on the ocean. We hope this game will inspire you to learn more and more about
+    the ocean and to get involved!\n\r\nNow do not always start. He was set to be
+    largest. Maecenas faucibus elit purus, in tincidunt lacinia out of life. For I
+    also store Owner, rutrum sapien in, euismod orci. Of life, nor is the chief and
+    lacinia Duis vel arcu vel. Quisque consectetur et orci ut the ends of the. Performance
+    so that developer. Curabitur laoreet sem lectus, placerat nulla, and condimentum
+    sit amet. The element or a lion, antioxidants diameter no skirt ugly. Maecenas
+    nunc orci, fringilla nec ultrices eget, hendrerit eu tortor. Fusce vitae nisl
+    erat. Aenean vulputate aliquet eget lorem."
 --- !u!222 &1671822577
 CanvasRenderer:
   m_ObjectHideFlags: 0
