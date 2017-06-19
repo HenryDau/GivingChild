@@ -28,14 +28,15 @@ public class PointCounter : MonoBehaviour {
 		//pointText.text = "Trash Missed: " + trashMissed.ToString () + "\nPoints: " + point.ToString();
 		//pointText.text = "Points: " + point.ToString();
 
-		if (point >= 50) {
+		if (GlobalVariables.difficulty > 0 && point >= GlobalVariables.trashToCollect) {
 			showWinMenu = true;
 			GlobalVariables.completeLevel ();
 			GlobalVariables.Save ();
-			GlobalVariables.difficulty = 0;
+			GlobalVariables.resetDifficulty ();
 		}
-		if (GlobalVariables.difficulty == 1 && trashMissed >= GlobalVariables.trashToMiss) {
+		if (GlobalVariables.difficulty >= 1 && trashMissed >= GlobalVariables.trashToMiss) {
 			showLoseMenu = true;
+			GlobalVariables.resetDifficulty ();
 		}
     }
 

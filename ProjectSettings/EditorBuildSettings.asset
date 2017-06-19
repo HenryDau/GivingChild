@@ -9,6 +9,12 @@ EditorBuildSettings:
     path: Assets/Menu/bubble_menu.unity
     guid: aa5617955e06f8e4ab8b5593ade7e476
   - enabled: 1
+    path: Assets/Menu/instructions.unity
+    guid: b0c1f5f3b16d5fd4ba7324165c997910
+  - enabled: 1
+    path: Assets/GameScene.unity
+    guid: a1b09f6bcb21d8948971cc1c017c4075
+  - enabled: 1
     path: Assets/Menu/attributions.unity
     guid: 14391dd7d99636b4bba600565be60e09
   - enabled: 1
@@ -38,6 +44,3 @@ EditorBuildSettings:
   - enabled: 1
     path: Assets/_Scenes/AquariumScene6.unity
     guid: 3e21e485cd55a3048be219e50863a69a
-  - enabled: 1
-    path: Assets/Menu/instructions.unity
-    guid: b0c1f5f3b16d5fd4ba7324165c997910

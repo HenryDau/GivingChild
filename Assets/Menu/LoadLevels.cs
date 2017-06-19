@@ -6,18 +6,7 @@ public class LoadLevels : MonoBehaviour {
 
 	public void loadScene(string scene)
 	{
-		GlobalVariables.Load ();
-		if (GlobalVariables.difficulty == 2) {
-			if (GlobalVariables.level_1_complete) {
-				Application.LoadLevel (scene);
-			}
-		} else if (GlobalVariables.difficulty == 3) {
-			if (GlobalVariables.level_2_complete) {
-				Application.LoadLevel (scene);
-			}
-		} else {
-			Application.LoadLevel (scene);
-		}
+		Application.LoadLevel (scene);
 	}
 
     public void overloadScene(string scene)
@@ -38,5 +27,12 @@ public class LoadLevels : MonoBehaviour {
 
 	public void setDifficulty(int level) {
 		GlobalVariables.difficulty = level;
+		if (level == 1) {
+			GlobalVariables.trashToCollect = 100;
+		} else if (level == 2) {
+			GlobalVariables.trashToCollect = 500;
+		} else if (level == 3) {
+			GlobalVariables.trashToCollect = 1000;
+		}
 	}
 }
