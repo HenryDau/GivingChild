@@ -12,8 +12,8 @@ public class resizeFix : MonoBehaviour {
         {
             //Debug.Log("Width: "+Screen.width);
             //Debug.Log("Height: " + Screen.height);
-            double xratio = 1 / ((double)Screen.width / 1072);
-            double yratio = 1 / ((double)Screen.height / 536);
+            double xratio = 1 / ((double)Screen.width / 2000);
+            double yratio = 1 / ((double)Screen.height / 1000);
             //Debug.Log("x: " + xratio);
             //Debug.Log("y: " + yratio);
             transform.localScale = new Vector3(transform.localScale.x * (float)xratio, transform.localScale.y * (float)yratio, transform.localScale.z);
