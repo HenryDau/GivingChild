@@ -40,8 +40,6 @@ public class JellyFishMove : MonoBehaviour {
 			goalPoint.x = Random.Range (MIN_X, MAX_X);
 			goalPoint.y = Random.Range (MIN_Y, MAX_Y);
 
-			Debug.Log (goalPoint);
-
 			rb.velocity = (goalPoint - rb.position).normalized * Random.Range (MIN_SPEED, MAX_SPEED);
 			Vector2 dir = rb.velocity;
 			float angle = Mathf.Atan2 (dir.y, dir.x) * Mathf.Rad2Deg;

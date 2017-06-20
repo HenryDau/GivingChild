@@ -891,7 +891,6 @@ GameObject:
   - component: {fileID: 644139577}
   - component: {fileID: 644139576}
   - component: {fileID: 644139575}
-  - component: {fileID: 644139578}
   m_Layer: 0
   m_Name: EventSystem
   m_TagString: Untagged
@@ -944,17 +943,6 @@ Transform:
   m_Father: {fileID: 0}
   m_RootOrder: 2
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
---- !u!114 &644139578
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_PrefabParentObject: {fileID: 0}
-  m_PrefabInternal: {fileID: 0}
-  m_GameObject: {fileID: 644139574}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 11737801d987b1045b3d5131ae406130, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
 --- !u!1001 &661036525
 Prefab:
   m_ObjectHideFlags: 0
@@ -1103,7 +1091,7 @@ Prefab:
       objectReference: {fileID: 0}
     - target: {fileID: 4414117629720524, guid: 0e82af555afdb8d41ba751d03937c6de, type: 2}
       propertyPath: m_LocalPosition.z
-      value: -676
+      value: -600
       objectReference: {fileID: 0}
     - target: {fileID: 4414117629720524, guid: 0e82af555afdb8d41ba751d03937c6de, type: 2}
       propertyPath: m_LocalRotation.x

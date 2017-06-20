@@ -32,11 +32,11 @@ public class PointCounter : MonoBehaviour {
 			showWinMenu = true;
 			GlobalVariables.completeLevel ();
 			GlobalVariables.Save ();
-			GlobalVariables.resetDifficulty ();
+			//GlobalVariables.resetDifficulty ();
 		}
 		if (GlobalVariables.difficulty >= 1 && trashMissed >= GlobalVariables.trashToMiss) {
 			showLoseMenu = true;
-			GlobalVariables.resetDifficulty ();
+			//GlobalVariables.resetDifficulty ();
 		}
     }
 
@@ -63,12 +63,36 @@ public class PointCounter : MonoBehaviour {
 			Time.timeScale = 1;
 			GlobalVariables.isPaused = false;
 		}
-		if (GUI.Button (new Rect ((Screen.width / 2), (Screen.height / 4), (Screen.width / 2) - 20, (Screen.height / 2) - 20), "Replay")) {
-			SceneManager.LoadScene(SceneManager.GetActiveScene().name);
-			Time.timeScale = 1;
-			GlobalVariables.isPaused = false;
-		}
-
+        if (GlobalVariables.difficulty != 3)
+        {
+            if (GUI.Button(new Rect((Screen.width / 2), (Screen.height / 4), (Screen.width / 2) - 20, (Screen.height / 2) - 20), "Next Level"))
+            {
+                if (GlobalVariables.difficulty == 1)
+                {
+                    GlobalVariables.difficulty = 2;
+                    GlobalVariables.trashToCollect = 500;
+                }
+                else if (GlobalVariables.difficulty == 2)
+                {
+                    GlobalVariables.difficulty = 3;
+                    GlobalVariables.trashToCollect = 1000;
+                }
+                
+                SceneManager.LoadScene("GameScene");
+                Time.timeScale = 1;
+                GlobalVariables.isPaused = false;
+                showWinMenu = false;
+            }
+        }
+        else
+        {
+            if (GUI.Button(new Rect((Screen.width / 2), (Screen.height / 4), (Screen.width / 2) - 20, (Screen.height / 2) - 20), "Replay"))
+            {
+                SceneManager.LoadScene(SceneManager.GetActiveScene().name);
+                Time.timeScale = 1;
+                GlobalVariables.isPaused = false;
+            }
+        }
 	}
 
 }

@@ -16,7 +16,7 @@ public class GarbageFloatPoof : MonoBehaviour {
     // Use this for initialization
     void Start () {
 		int value = UnityEngine.Random.Range (0, 100);
-		float speed = UnityEngine.Random.Range (5, 13) * GlobalVariables.SHRINK_FACTOR;
+		float speed = UnityEngine.Random.Range (8, 20) * GlobalVariables.SHRINK_FACTOR;
 		rb = GetComponent<Rigidbody2D> ();
 		if (value < 50) {
 			rb.velocity = new Vector2 (-(float)speed / 10, 0);

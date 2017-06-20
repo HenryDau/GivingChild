@@ -108,9 +108,9 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   objectToSpawn: {fileID: 1690333722025414}
-  MAX_SIZE: 7
-  MIN_SIZE: 6
-  GROWTH_RATE: 0.3
+  MAX_SIZE: 20
+  MIN_SIZE: 15
+  GROWTH_RATE: 1
   MIN_X: -150
   MIN_Y: -75
   MAX_X: 150
