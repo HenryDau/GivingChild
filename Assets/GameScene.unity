@@ -1046,12 +1046,12 @@ Prefab:
     - target: {fileID: 114447043008917212, guid: dcd61605cf6261e45865f6bfd26014c8,
         type: 2}
       propertyPath: MIN_Z
-      value: -8
+      value: -6
       objectReference: {fileID: 0}
     - target: {fileID: 114447043008917212, guid: dcd61605cf6261e45865f6bfd26014c8,
         type: 2}
       propertyPath: MAX_Z
-      value: -1
+      value: -2
       objectReference: {fileID: 0}
     - target: {fileID: 114447043008917212, guid: dcd61605cf6261e45865f6bfd26014c8,
         type: 2}
