@@ -108,15 +108,15 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   objectToSpawn: {fileID: 1690333722025414}
-  MAX_SIZE: 20
-  MIN_SIZE: 15
+  MAX_SIZE: 23
+  MIN_SIZE: 13
   GROWTH_RATE: 1
   MIN_X: -150
   MIN_Y: -75
   MAX_X: 150
   MAX_Y: -30
-  MIN_Z: -8
-  MAX_Z: -1
+  MIN_Z: -6
+  MAX_Z: -2
   randomizeRotation: 0
   growOnPoint: 1
   growOnMiss: 0

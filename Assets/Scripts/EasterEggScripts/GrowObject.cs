@@ -56,7 +56,7 @@ public class GrowObject : MonoBehaviour {
 
 		if (changeSizeDynamically) {
 			
-			transform.position = new Vector3 (Random.Range(MIN_X, MAX_X), newY, newZ + 20);
+			transform.position = new Vector3 (Random.Range(MIN_X, MAX_X), newY, newZ);
 			size = (float)Random.Range (MIN_SIZE, MAX_SIZE) * 
 				(((float)MAX_Z - (float)newZ) / ((float)MAX_Z - (float)MIN_Z));
 		
@@ -65,6 +65,8 @@ public class GrowObject : MonoBehaviour {
 			transform.position = new Vector3 (Random.Range(MIN_X, MAX_X), newY, Random.Range(MIN_Z, MAX_Z));
 			size = (float)Random.Range (MIN_SIZE, MAX_SIZE);
 		}
+
+		//Debug.Log ("Size: " + size + " Z: " + transform.position.z);
 
 		transform.localScale = new Vector3 (0, 0, 0);
 
